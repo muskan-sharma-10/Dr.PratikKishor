@@ -44,10 +44,12 @@ const Footer: React.FC = () => {
                             <FaPhone className="mr-3 text-zinc-400" />
                             +91-11-3040-3040
                         </p>
-                        <p className="flex items-center mb-3 text-zinc-700">
-                            <FaEnvelope className="mr-3 text-zinc-400" />
-                            [Hospital Contact Link]
-                        </p>
+                      <p className="flex items-center mb-3 text-zinc-700">
+  <FaEnvelope className="mr-3 text-zinc-400" />
+  <a href="mailto:info@hospital.com" className="hover:underline">
+    info@hospital.com
+  </a>
+</p>
                     </motion.div>
 
                     <motion.div
