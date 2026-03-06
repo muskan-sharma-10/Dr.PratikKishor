@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
                 >
                     <p className="mb-4">&copy; {new Date().getFullYear()} Dr. Pratik Kishore. All rights reserved.</p>
                     <p className="text-sm mb-2">
-                        <a href="#" className="text-zinc-700 hover:underline">Hospital Profile</a>
+                        <a href="/" className="text-zinc-700 hover:underline">Hospital Profile</a>
                     </p>
                     <p className="text-sm">
                         website by: <a href="https://rnahealthtech.com" className="text-zinc-700 hover:underline">RNA HealthTech</a>

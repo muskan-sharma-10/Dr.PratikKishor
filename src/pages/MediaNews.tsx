@@ -123,7 +123,7 @@ const MediaNews: React.FC = () => {
                 <div className="container mx-auto px-4">
                     <div className="flex items-center justify-between mb-12">
                         <h2 className="text-3xl font-bold text-gray-900">Video Gallery</h2>
-                        <a href="#" className="text-amber-600 font-semibold flex items-center space-x-2 hover:underline">
+                        <a href="/" className="text-amber-600 font-semibold flex items-center space-x-2 hover:underline">
                             <span>Visit Channel</span>
                             <FaExternalLinkAlt size={14} />
                         </a>
