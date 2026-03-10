@@ -4,14 +4,17 @@ import { Calendar, Video, Brain, Microscope, Activity, Dna } from 'lucide-react'
 
 const HeroSection: React.FC = () => {
   const specialties = [
-    { icon: Brain, text: "Skull Base Surgery" },
-    { icon: Microscope, text: "Neuro-oncology" },
-    { icon: Activity, text: "Endoscopic Surgery" },
-    { icon: Dna, text: "Brain & Spine Care" }
+    { icon: Brain, text: "Stroke Management", image: "/images/stroke-management.png" },
+    { icon: Microscope, text: "Interventional Neurology", image: "/images/neurovascular-intervention.png" },
+    { icon: Activity, text: "Neuro Diagnostics", image: "/images/neuro-diagnostics.png" },
+    { icon: Dna, text: "Hyperacute Care", image: "/images/specialized-therapies.png" }
   ];
 
   return (
-    <section className="relative w-full min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden bg-gradient-to-br from-teal-900 via-teal-700 to-teal-500">
+    <section
+      className="relative w-full min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/neuropoint_board.jpg')" }}
+    >
       <div className="absolute inset-0">
         <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
           <defs>
@@ -31,34 +34,42 @@ const HeroSection: React.FC = () => {
       </div>
       <div className="container mx-auto px-4 z-10">
         <div className="text-center mb-12">
-          <motion.h1 
+          <motion.h1
             className="text-5xl md:text-7xl font-bold text-white mb-4 font-fraunces"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Neurosurgical Excellence
+            Neurological Excellence
           </motion.h1>
-          <motion.p 
+          <motion.p
             className="text-xl md:text-3xl text-blue-200 mb-8 font-work-sans"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Dr. Pratik Kisore Almeida, MD PhD
+            Dr. Pratik Kishore
           </motion.p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           {specialties.map((specialty, index) => (
             <motion.div
               key={index}
-              className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 text-center"
+              className="relative overflow-hidden rounded-xl h-32 md:h-40 group cursor-pointer"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <specialty.icon className="w-12 h-12 mx-auto mb-4 text-blue-300" />
-              <h3 className="text-lg font-semibold text-white">{specialty.text}</h3>
+              <img
+                src={specialty.image}
+                alt={specialty.text}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-40"
+              />
+              <div className="absolute inset-0 bg-teal-900/40 group-hover:bg-teal-900/20 transition-colors duration-300" />
+              <div className="relative z-10 h-full flex flex-col items-center justify-center p-4">
+                <specialty.icon className="w-8 h-8 md:w-10 md:h-10 mb-2 text-blue-200" />
+                <h3 className="text-sm md:text-base font-bold text-white text-center leading-tight">{specialty.text}</h3>
+              </div>
             </motion.div>
           ))}
         </div>

@@ -7,10 +7,7 @@ const AlternatingServicesShowcase: React.FC = () => {
 
   const navigate = useNavigate();
   // Take first 6 services
-  const selectedServices = services.slice(0, 6).map((service, index) => {
-    const images = ['/images/1.jpeg', '/images/2.jpg', '/images/3.jpg', '/images/4.jpg', '/images/5.jpg', '/images/about2.jpg'];
-    return { ...service, image: images[index % images.length] };
-  });
+  const selectedServices = services.slice(0, 6);
 
   const containerVariants = {
     hidden: { opacity: 0 },

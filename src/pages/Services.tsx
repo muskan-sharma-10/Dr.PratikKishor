@@ -33,12 +33,12 @@ const Services: React.FC = () => {
             <div
                 className="fixed inset-0 z-0"
                 style={{
-                    backgroundImage: 'url(/images/medical-bg.jpg)',
+                    backgroundImage: 'url(/images/neuropoint_board.jpg)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
             >
-                <div className="absolute inset-0 bg-zinc-900/90" />
+                <div className="absolute inset-0 bg-zinc-900/85" />
             </div>
 
             {/* Main Content */}
@@ -58,8 +58,8 @@ const Services: React.FC = () => {
                                         <AccordionContent>
                                             <div
                                                 className={`cursor-pointer py-2 px-4 rounded transition-colors ${selectedService?.id === service.id
-                                                        ? 'bg-teal-600 text-white'
-                                                        : 'hover:bg-teal-50'
+                                                    ? 'bg-teal-600 text-white'
+                                                    : 'hover:bg-teal-50'
                                                     }`}
                                                 onClick={() => handleServiceClick(service)}
                                             >
@@ -80,8 +80,8 @@ const Services: React.FC = () => {
                                         <li
                                             key={service.id}
                                             className={`cursor-pointer rounded-lg transition-all duration-200 ${selectedService?.id === service.id
-                                                    ? 'bg-teal-600 text-white'
-                                                    : 'hover:bg-teal-50'
+                                                ? 'bg-teal-600 text-white'
+                                                : 'hover:bg-teal-50'
                                                 }`}
                                             onClick={() => handleServiceClick(service)}
                                         >
@@ -89,8 +89,8 @@ const Services: React.FC = () => {
                                                 <div>
                                                     <h3 className="font-semibold">{service.name}</h3>
                                                     <p className={`text-sm ${selectedService?.id === service.id
-                                                            ? 'text-teal-50'
-                                                            : 'text-zinc-600'
+                                                        ? 'text-teal-50'
+                                                        : 'text-zinc-600'
                                                         }`}>
                                                         {service.shortDescription}
                                                     </p>

@@ -6,7 +6,7 @@ const DrKishoreHomeSection: React.FC = () => {
     <section
       className="relative min-h-screen bg-cover bg-center bg-fixed py-20"
       style={{
-        backgroundImage: "url('/images/homeabout.jpg')",
+        backgroundImage: "url('/images/neuropoint_board.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-black/30"></div>
@@ -16,22 +16,40 @@ const DrKishoreHomeSection: React.FC = () => {
             About Dr. Pratik Kishore
           </h2>
           <div className="space-y-6 text-center">
-            <p className="text-amber-500 text-md md:text-lg">
-              Dr. Pratik Kishore is a highly experienced Neurologist and Neurovascular Intervention Specialist practicing at BLK-Max Super Speciality Hospital, New Delhi. He is recognized for his expertise in diagnosing and treating a wide range of complex neurological and cerebrovascular disorders using both medical and minimally invasive interventional techniques.
+            <p className="text-zinc-700 text-md md:text-lg">
+              Dr. Pratik Kishore is a highly experienced Neurologist and Neurovascular Intervention Specialist. He is recognized for his expertise in diagnosing and treating a wide range of complex neurological and cerebrovascular disorders using both medical and minimally invasive interventional techniques.
             </p>
-            <p className="text-amber-500 text-lg">
+            <p className="text-zinc-700 text-lg">
               He combines a patient-centric approach with advanced procedural skills to deliver comprehensive neurological care — focusing on improving outcomes and quality of life for patients with acute and chronic neurological conditions.
             </p>
-            <p className="text-amber-500 text-lg mb-4">
-              With extensive clinical experience in neurovascular procedures and stroke management, Dr. Kishore has worked in advanced diagnostic and interventional neurology settings. He is dedicated to providing state-of-the-art care for stroke, aneurysms, and other neurological disorders at <strong>Neuropoint Medical Centre</strong> and BLK-Max Super Speciality Hospital.
+            <p className="text-zinc-700 text-lg mb-4">
+              With extensive clinical experience in neurovascular procedures and stroke management, Dr. Kishore is dedicated to providing state-of-the-art care at <strong>Neuropoint Medical Centre</strong> and BLK-Max Super Speciality Hospital.
             </p>
-            <div className="bg-amber-50 p-4 rounded-lg mb-8 border border-amber-100 flex items-center justify-center space-x-4">
-              <div className="text-left">
-                <p className="text-amber-800 font-bold">Dr. Shalini</p>
-                <p className="text-amber-600 text-sm">MBBS, DCP, DNB (Pathology)</p>
+            <div className="bg-white/90 backdrop-blur-md p-8 rounded-2xl mb-10 border border-amber-200 shadow-xl flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-amber-100 mb-4 shadow-md">
+                  <img src="/images/about1.jpg" alt="Dr. Pratik Kishore" className="w-full h-full object-cover" style={{ objectPosition: 'center 20%' }} />
+                </div>
+                <p className="text-amber-800 text-xl font-bold">Dr. Pratik Kishore</p>
+                <div className="flex flex-wrap justify-center gap-1 mt-1">
+                  <span className="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-[10px] font-bold uppercase">MBBS</span>
+                  <span className="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-[10px] font-bold uppercase">MD</span>
+                  <span className="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-[10px] font-bold uppercase">DM</span>
+                  <span className="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-[10px] font-bold uppercase">FNB</span>
+                </div>
               </div>
-              <div className="h-10 w-px bg-amber-200"></div>
-              <p className="text-amber-700 text-sm italic">Diagnostic Excellence in Pathology</p>
+              <div className="hidden md:block h-24 w-px bg-amber-200"></div>
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-amber-100 mb-4 shadow-md">
+                  <img src="/images/dr_shalini.JPG" alt="Dr. Shalini" className="w-full h-full object-cover" style={{ objectPosition: 'center 15%' }} />
+                </div>
+                <p className="text-amber-800 text-xl font-bold">Dr. Shalini</p>
+                <div className="flex flex-wrap justify-center gap-1 mt-1">
+                  <span className="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-[10px] font-bold uppercase">MBBS</span>
+                  <span className="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-[10px] font-bold uppercase">DCP</span>
+                  <span className="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-[10px] font-bold uppercase">DNB</span>
+                </div>
+              </div>
             </div>
             <div className="flex flex-wrap justify-center gap-4">
 

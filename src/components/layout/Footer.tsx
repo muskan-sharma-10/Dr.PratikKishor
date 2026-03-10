@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
                         <h3 className="text-2xl font-bold mb-6 font-pt-serif-regular text-zinc-800">Dr. Pratik Kishore</h3>
                         <p className="mb-4 text-zinc-600">Senior Consultant – Neurology & Neurovascular Intervention</p>
                         <p className="mb-4 text-zinc-600">
-                            MBBS, MD, DM, FNB
+                            MBBS, MD, DM (Neurology), FNB (NVI)
                         </p>
                         <p className='mb-4 text-zinc-600'>
                             Centre for Neurosciences, Neurology
@@ -38,18 +38,18 @@ const Footer: React.FC = () => {
                         <h3 className="text-2xl font-pt-serif-regular mb-6 text-zinc-800">Contact</h3>
                         <p className="flex items-center mb-3 text-zinc-700">
                             <FaMapMarkerAlt className="mr-3 text-zinc-400" />
-                            BLK-Max Super Speciality Hospital, New Delhi
+                            Neuropoint Medical Centre, New Rohtak Road, New Delhi
                         </p>
                         <p className="flex items-center mb-3 text-zinc-700">
                             <FaPhone className="mr-3 text-zinc-400" />
-                            +91-11-3040-3040
+                            +91-8368123184
                         </p>
-                      <p className="flex items-center mb-3 text-zinc-700">
-  <FaEnvelope className="mr-3 text-zinc-400" />
-  <a href="mailto:info@hospital.com" className="hover:underline">
-    info@hospital.com
-  </a>
-</p>
+                        <p className="flex items-center mb-3 text-zinc-700">
+                            <FaEnvelope className="mr-3 text-zinc-400" />
+                            <a href="mailto:appointment@neuropoint.com" className="hover:underline">
+                                appointment@neuropoint.com
+                            </a>
+                        </p>
                     </motion.div>
 
                     <motion.div
@@ -59,10 +59,10 @@ const Footer: React.FC = () => {
                     >
                         <h3 className="text-2xl font-pt-serif-regular mb-6 text-zinc-800">Specialties</h3>
                         <ul className="space-y-2 text-zinc-700">
-                            <li><Link to="/services/skull-base-surgery" className="transition-colors">Skull Base Surgery</Link></li>
-                            <li><Link to="/services/neuro-oncology" className="transition-colors">Neuro Oncology</Link></li>
-                            <li><Link to="/services/endoscopic-surgery" className="transition-colors">Endoscopic Surgery</Link></li>
-                            <li><Link to="/services/brain-spine" className="transition-colors">Brain and Spine</Link></li>
+                            <li><Link to="/services/stroke-management" className="transition-colors">Stroke Management</Link></li>
+                            <li><Link to="/services/neurovascular-intervention" className="transition-colors">Neurovascular Intervention</Link></li>
+                            <li><Link to="/services/neuro-diagnostics" className="transition-colors">Neuro Diagnostics</Link></li>
+                            <li><Link to="/services/specialized-therapies" className="transition-colors">Specialized Therapies</Link></li>
                         </ul>
                     </motion.div>
 

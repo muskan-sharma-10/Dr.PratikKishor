@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 const AppointmentSection = () => {
-  const [state, handleSubmit] = useForm("mqaawkpe"); 
+  const [state, handleSubmit] = useForm("mqaawkpe");
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -30,7 +30,7 @@ const AppointmentSection = () => {
   }
 
   return (
-    <section className="w-full bg-gray-50 py-12 sm:py-16 bg-teal-800">
+    <section id="Appointment" className="w-full bg-gray-50 py-12 sm:py-16 bg-teal-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12">
           {/* Left Content Section */}

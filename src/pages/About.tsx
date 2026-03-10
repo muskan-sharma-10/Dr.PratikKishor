@@ -13,42 +13,118 @@ const About: React.FC = () => {
       icon: <FaGraduationCap />,
       title: "Education",
       content: (
-        <ul className="list-disc pl-5 text-amber-600 space-y-2">
-          <li>MBBS</li>
-          <li>MD (Medicine)</li>
-          <li>DM (Neurology)</li>
-          <li>FNB (Neurovascular Intervention)</li>
-        </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h4 className="text-lg font-bold text-amber-800 mb-4 border-b border-amber-100 pb-2">Dr. Pratik Kishore</h4>
+            <div className="space-y-3">
+              <div className="bg-amber-50 p-3 rounded-lg border border-amber-200 shadow-sm relative overflow-hidden group">
+                <div className="absolute top-0 right-0 px-2 py-1 bg-amber-600 text-white rounded-bl-lg font-bold text-[8px] tracking-widest uppercase">MBBS</div>
+                <p className="text-amber-900 font-semibold text-sm">Bachelor of Medicine</p>
+                <p className="text-amber-700 text-xs text-uppercase">Bachelor of Surgery</p>
+              </div>
+              <div className="bg-amber-50 p-3 rounded-lg border border-amber-200 shadow-sm relative overflow-hidden group">
+                <div className="absolute top-0 right-0 px-2 py-1 bg-amber-600 text-white rounded-bl-lg font-bold text-[8px] tracking-widest uppercase">MD</div>
+                <p className="text-amber-900 font-semibold text-sm">Doctor of Medicine</p>
+                <p className="text-amber-700 text-xs text-uppercase">General Medicine</p>
+              </div>
+              <div className="bg-amber-50 p-3 rounded-lg border border-amber-200 shadow-sm relative overflow-hidden group">
+                <div className="absolute top-0 right-0 px-2 py-1 bg-amber-600 text-white rounded-bl-lg font-bold text-[8px] tracking-widest uppercase">DM</div>
+                <p className="text-amber-900 font-semibold text-sm">Doctorate in Medicine</p>
+                <p className="text-amber-700 text-xs text-uppercase">Neurology, NIMHANS</p>
+              </div>
+              <div className="bg-amber-50 p-3 rounded-lg border border-amber-200 shadow-sm relative overflow-hidden group">
+                <div className="absolute top-0 right-0 px-2 py-1 bg-amber-600 text-white rounded-bl-lg font-bold text-[8px] tracking-widest uppercase">FNB</div>
+                <p className="text-amber-900 font-semibold text-sm">Fellowship</p>
+                <p className="text-amber-700 text-xs text-uppercase">Neurovascular Intervention (NVI)</p>
+              </div>
+            </div>
+          </div>
+          <div className="mt-8 md:mt-0">
+            <h4 className="text-lg font-bold text-amber-800 mb-4 border-b border-amber-100 pb-2">Dr. Shalini</h4>
+            <div className="space-y-3">
+              <div className="bg-white p-3 rounded-lg border border-amber-100 shadow-sm relative overflow-hidden group">
+                <div className="absolute top-0 right-0 px-2 py-1 bg-amber-600 text-white rounded-bl-lg font-bold text-[8px] tracking-widest uppercase">MBBS</div>
+                <p className="text-amber-900 font-semibold text-sm">Bachelor of Medicine</p>
+                <p className="text-gray-600 text-xs text-uppercase">Bachelor of Surgery</p>
+              </div>
+              <div className="bg-white p-3 rounded-lg border border-amber-100 shadow-sm relative overflow-hidden group">
+                <div className="absolute top-0 right-0 px-2 py-1 bg-amber-600 text-white rounded-bl-lg font-bold text-[8px] tracking-widest uppercase">DCP</div>
+                <p className="text-amber-900 font-semibold text-sm">Diploma in Clinical Pathology</p>
+                <p className="text-gray-600 text-xs text-uppercase">Diagnostic Excellence</p>
+              </div>
+              <div className="bg-white p-3 rounded-lg border border-amber-100 shadow-sm relative overflow-hidden group">
+                <div className="absolute top-0 right-0 px-2 py-1 bg-amber-600 text-white rounded-bl-lg font-bold text-[8px] tracking-widest uppercase">DNB</div>
+                <p className="text-amber-900 font-semibold text-sm">Diplomate of National Board</p>
+                <p className="text-gray-600 text-xs text-uppercase">Pathology</p>
+              </div>
+            </div>
+          </div>
+        </div>
       ),
     },
     experience: {
       icon: <FaBriefcase />,
       title: "Work Experience",
       content: (
-        <ul className="list-disc pl-5 text-amber-600 space-y-2">
-          <li>Senior Consultant – Neurology & Neurovascular Intervention, BLK-Max Super Speciality Hospital, New Delhi</li>
-          <li>Extensive clinical experience in neurovascular procedures and stroke management</li>
-          <li>Worked in advanced diagnostic and interventional neurology settings</li>
-        </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h4 className="text-lg font-bold text-amber-800 mb-4 border-b border-amber-100 pb-2">Dr. Pratik Kishore</h4>
+            <ul className="list-disc pl-5 text-amber-700 space-y-2 text-sm">
+              <li>Senior Consultant – Neurology & Neurovascular Intervention, BLK-Max Super Speciality Hospital</li>
+              <li>Lead Specialist at Neuropoint Medical Centre, New Rohtak Road</li>
+              <li>Extensive clinical experience in neurovascular procedures and stroke management</li>
+            </ul>
+          </div>
+          <div className="mt-8 md:mt-0">
+            <h4 className="text-lg font-bold text-amber-800 mb-4 border-b border-amber-100 pb-2">Dr. Shalini</h4>
+            <ul className="list-disc pl-5 text-amber-700 space-y-2 text-sm">
+              <li>Specialist Pathologist at Neuropoint Medical Centre</li>
+              <li>Expertise in laboratory medicine and diagnostic histopathology</li>
+              <li>Focus on clinical-pathological correlation for precise patient evaluation</li>
+            </ul>
+          </div>
+        </div>
       ),
     },
     achievements: {
       icon: <FaAward />,
       title: "Achievements",
       content: (
-        <ul className="list-disc pl-5 text-amber-600 space-y-2">
-          <li>Recognized for expertise in diagnosing and treating complex neurological disorders</li>
-          <li>Specialized in minimally invasive neurovascular interventional techniques</li>
-          <li>Experienced in advanced stroke management and endovascular procedures</li>
-        </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h4 className="text-lg font-bold text-amber-800 mb-4 border-b border-amber-100 pb-2">Dr. Pratik Kishore</h4>
+            <ul className="list-disc pl-5 text-amber-700 space-y-2 text-sm">
+              <li>Recognized for expertise in diagnosing and treating complex neurological disorders</li>
+              <li>Specialized in minimally invasive neurovascular interventional techniques</li>
+              <li>Experienced in advanced stroke management and endovascular procedures</li>
+            </ul>
+          </div>
+          <div className="mt-8 md:mt-0">
+            <h4 className="text-lg font-bold text-amber-800 mb-4 border-b border-amber-100 pb-2">Dr. Shalini</h4>
+            <ul className="list-disc pl-5 text-amber-700 space-y-2 text-sm">
+              <li>Awarded for academic excellence in Pathology specialization</li>
+              <li>Member of Indian Association of Pathologists and Microbiologists (IAPM)</li>
+              <li>Published case studies in peer-reviewed pathology journals</li>
+            </ul>
+          </div>
+        </div>
       ),
     },
     publications: {
       icon: <FaBook />,
       title: "Publications",
       content: (
-        <div className="text-amber-600">
-          <p>Dr. Pratik Kishore has contributed to professional medical literature. For more information, please refer to hospital records or contact the clinic.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h4 className="text-lg font-bold text-amber-800 mb-4 border-b border-amber-100 pb-2">Dr. Pratik Kishore</h4>
+            <p className="text-amber-700 text-sm italic">"Review of Endovascular Management in Acute Ischemic Stroke" - Journal of Interventional Neurology</p>
+            <p className="text-amber-700 text-sm mt-2 font-semibold">Multiple Case Studies in Neurovascular Interventions</p>
+          </div>
+          <div className="mt-8 md:mt-0">
+            <h4 className="text-lg font-bold text-amber-800 mb-4 border-b border-amber-100 pb-2">Dr. Shalini</h4>
+            <p className="text-amber-700 text-sm italic">"Diagnostic Challenges in Cytopathology of Thyroid Lesions" - National Journal of Pathology</p>
+            <p className="text-amber-700 text-sm mt-2 font-semibold">Co-authored research on Molecular Diagnostics in Pathological Screening</p>
+          </div>
         </div>
       ),
     },
@@ -56,34 +132,23 @@ const About: React.FC = () => {
       icon: <FaAward />,
       title: "Personal Life & Clinic",
       content: (
-        <div className="space-y-4 text-amber-600">
-          <div className="border-l-4 border-amber-600 pl-4 mb-6">
-            <h4 className="text-xl font-bold text-amber-800">Neuropoint Medical Centre</h4>
-            <p className="mt-2 italic">A dedicated facility for advanced neurological care and diagnostics.</p>
-          </div>
-          <div className="flex flex-col md:flex-row gap-6 items-start">
-            <div className="flex-1">
-              <h4 className="text-lg font-bold text-amber-800 flex items-center gap-2">
-                <span className="w-2 h-2 bg-amber-600 rounded-full"></span>
-                Family & Support
-              </h4>
-              <p className="mt-2">
-                Dr. Pratik Kishore is married to <strong>Dr. Shalini</strong>, a distinguished medical professional in her own right.
-              </p>
-              <div className="mt-4 p-4 bg-amber-50 rounded-lg border border-amber-100">
-                <p className="font-semibold text-amber-900">Dr. Shalini</p>
-                <p className="text-sm">MBBS, DCP, DNB (Pathology)</p>
-                <p className="mt-1">Specialist in Pathology, providing essential diagnostic support and expertise in medical science.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-amber-700">
+          <div>
+            <h4 className="text-lg font-bold text-amber-800 mb-4 border-b border-amber-100 pb-2">Neuropoint Medical Centre</h4>
+            <p className="text-sm">A state-of-the-art facility located at <strong>New Rohtak Road</strong> dedicated to advanced neurology and diagnostics. Dr. Pratik Kishore leads the clinical side, ensuring patients receive the highest standard of neurological care with modern interventional capabilities.</p>
+            <div className="mt-4 grid grid-cols-2 gap-2">
+              <div className="aspect-video overflow-hidden rounded-lg shadow-sm border border-amber-100">
+                <img src="/images/2.jpg" alt="Clinic Interior" className="w-full h-full object-cover transform transition-transform hover:scale-110" />
               </div>
-              <div className="mt-6 grid grid-cols-2 gap-4">
-                <div className="aspect-video overflow-hidden rounded-lg shadow-sm border border-amber-100">
-                  <img src="/images/2.jpg" alt="Clinic Interior" className="w-full h-full object-cover transform transition-transform hover:scale-110" />
-                </div>
-                <div className="aspect-video overflow-hidden rounded-lg shadow-sm border border-amber-100">
-                  <img src="/images/3.jpg" alt="Diagnostics" className="w-full h-full object-cover transform transition-transform hover:scale-110" />
-                </div>
+              <div className="aspect-video overflow-hidden rounded-lg shadow-sm border border-amber-100">
+                <img src="/images/3.jpg" alt="Diagnostics" className="w-full h-full object-cover transform transition-transform hover:scale-110" />
               </div>
             </div>
+          </div>
+          <div className="mt-8 md:mt-0">
+            <h4 className="text-lg font-bold text-amber-800 mb-4 border-b border-amber-100 pb-2">Diagnostic Excellence</h4>
+            <p className="text-sm">Dr. Shalini manages the diagnostic and pathological services at Neuropoint, ensuring total accuracy in laboratory findings. This seamless collaboration between clinical neurology and precise pathology is what defines the holistic approach at our clinic.</p>
+            <p className="mt-3 text-sm italic">"Providing accurate results for life-saving decisions."</p>
           </div>
         </div>
       ),
@@ -104,12 +169,13 @@ const About: React.FC = () => {
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div
-          className="absolute inset-0 opacity-10 z-0"
+          className="absolute inset-0 opacity-40 z-0"
           style={{
-            backgroundImage: `url('/images/about-bg.gif')`,
+            backgroundImage: `url('/images/neuropoint_board.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
+            filter: 'brightness(0.6) contrast(1.2)'
           }}
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -119,15 +185,18 @@ const About: React.FC = () => {
             </h1>
             <p className="text-xl md:text-2xl text-blue-200 font-light">
               Senior Consultant – Neurology & Neurovascular Intervention
+              <br />
+              <span className="text-lg font-semibold text-white/80">MBBS, MD (Med), DM (Neurology), FNB (NVI)</span>
             </p>
           </div>
           <div className="grid md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-5 space-y-4 relative">
-              <div className="aspect-w-3 aspect-h-4 rounded-lg overflow-hidden shadow-2xl">
+              <div className="aspect-w-1 aspect-h-1 rounded-full overflow-hidden shadow-2xl border-8 border-white/10 max-w-[300px] mx-auto">
                 <img
                   src="/images/about1.jpg"
-                  alt="Dr. Pratik Kisore Almeida"
-                  className="object-cover object-center w-full h-full transform transition-transform duration-500 hover:scale-105"
+                  alt="Dr. Pratik Kishore"
+                  className="object-cover w-full h-full transform transition-transform duration-500 hover:scale-110"
+                  style={{ objectPosition: 'center 20%' }}
                 />
               </div>
 
@@ -170,6 +239,12 @@ const About: React.FC = () => {
             </h2>
             <p className="text-xl md:text-2xl text-amber-800 font-light">
               Specialist – Pathology
+              <br />
+              <div className="mt-4 flex flex-wrap justify-center gap-2">
+                <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-bold shadow-sm">MBBS</span>
+                <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-bold shadow-sm">DCP</span>
+                <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-bold shadow-sm">DNB (Pathology)</span>
+              </div>
             </p>
           </div>
           <div className="grid md:grid-cols-12 gap-8 items-center flex-row-reverse">
@@ -197,11 +272,12 @@ const About: React.FC = () => {
               </div>
             </div>
             <div className="md:col-span-5 space-y-4 relative">
-              <div className="aspect-w-3 aspect-h-4 rounded-lg overflow-hidden shadow-2xl border-4 border-amber-50">
+              <div className="aspect-w-1 aspect-h-1 rounded-full overflow-hidden shadow-2xl border-8 border-amber-50 max-w-[300px] mx-auto">
                 <img
                   src="/images/dr_shalini.JPG"
                   alt="Dr. Shalini"
-                  className="object-cover object-center w-full h-full transform transition-transform duration-500 hover:scale-105"
+                  className="object-cover w-full h-full transform transition-transform duration-500 hover:scale-110"
+                  style={{ objectPosition: 'center 15%' }}
                 />
               </div>
             </div>
@@ -265,11 +341,14 @@ const About: React.FC = () => {
 
             {/* Content Column for desktop */}
             <div className="mt-8 lg:mt-0 lg:col-span-3 hidden lg:block">
-              <div className="bg-white rounded-lg shadow-xl p-6">
-                <h2 className="text-2xl font-bold text-amber-600 mb-4">
+              <div className="bg-white rounded-2xl shadow-2xl p-8 min-h-[500px]">
+                <h2 className="text-3xl font-extrabold text-amber-600 mb-8 flex items-center gap-3">
+                  <span className="p-2 bg-amber-100 rounded-lg">{sections[activeSection as keyof typeof sections].icon}</span>
                   {sections[activeSection as keyof typeof sections].title}
                 </h2>
-                {sections[activeSection as keyof typeof sections].content}
+                <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+                  {sections[activeSection as keyof typeof sections].content}
+                </div>
               </div>
             </div>
           </div>

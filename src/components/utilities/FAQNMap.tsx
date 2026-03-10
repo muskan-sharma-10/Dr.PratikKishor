@@ -5,36 +5,33 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./
 const FAQAndMap = () => {
     const faqData = [
         {
-            question: "Who is Dr. Pratik Kisore Almeida?",
-            answer: "Dr. Pratik Kisore Almeida, MD PhD, is a neurosurgeon specializing in skull base surgery and neuro-oncology. He is known for his passion for the art of surgery and microsurgical anatomy."
+            question: "Who is Dr. Pratik Kishore?",
+            answer: "Dr. Pratik Kishore, MD, DM, FNB, is a leading Neurologist and Neurovascular Intervention Specialist. He specializes in advanced stroke management and minimally invasive endovascular procedures."
         },
         {
-            question: "What is Dr. Almeida's educational background?",
-            answer: "Dr. Almeida obtained his medical degree from The School of Medicine of The Universidade Federal do Ceará. He completed his Neurosurgery residency at State University of Campinas (UNICAMP) in Brazil. He has also undergone additional training at prestigious institutions such as Johns Hopkins Hospital, University of Toronto, and Cleveland Clinic."
+            question: "What is Dr. Pratik Kishore's educational background?",
+            answer: "Dr. Pratik Kishore obtained his MBBS and MD (Medicine), followed by DM (Neurology) from the prestigious NIMHANS. He also holds a Fellowship in Neurovascular Intervention (FNB)."
         },
         {
-            question: "What are Dr. Almeida's areas of expertise?",
-            answer: "Dr. Almeida specializes in treating brain tumors and conditions including brain cancer, brain metastasis, brain tumor-associated epilepsy, chondrosarcoma, chordoma, CSF leak, and glioma. He is an expert in skull base surgery, pituitary tumor surgery, gamma knife surgery, awake brain surgery, and craniotomy."
+            question: "What are Dr. Pratik Kishore's areas of expertise?",
+            answer: "Dr. Pratik Kishore specializes in stroke management, brain aneurysms, interventional neurology, and neurophysiological diagnostics. He is an expert in mechanical thrombectomy, aneurysm coiling, and carotid stenting."
         },
         {
-            question: "What is Dr. Almeida's current position?",
-            answer: "Dr. Almeida has recently accepted a position at Indiana University Health to join the Department of Neurosurgery at Indiana University School of Medicine. Previously, he was a neurosurgeon at Mayo Clinic Florida in Jacksonville, Florida."
+            question: "Where does Dr. Pratik Kishore practice?",
+            answer: "Dr. Pratik Kishore practices at BLK-Max Super Speciality Hospital, New Delhi, and at Neuropoint Medical Centre, New Rohtak Road."
         },
         {
-            question: "What are Dr. Almeida's research interests?",
-            answer: "His main areas of research are open and endoscopic skull base surgery, neuro-oncology, and microsurgical anatomy. He has authored and co-authored over 110 peer-reviewed papers, 75 neurosurgical meeting presentations, and 29 book chapters."
+            question: "What are Dr. Pratik Kishore's research interests?",
+            answer: "His main areas of research include interventional neurology, hyperacute stroke management, and advanced neuro-diagnostics. He has significantly contributed to the field of neurovascular intervention."
         },
         {
-            question: "Where can I find more information about Dr. Almeida?",
-            answer: "You can find more information about Dr. Almeida on his social media profiles and academic publications. Links are provided below the map."
+            question: "Where can I find more information about Dr. Pratik Kishore?",
+            answer: "You can find more information about Dr. Pratik Kishore on his LinkedIn profile and via appointment at his clinic. Links are provided below."
         }
     ];
 
     const socialLinks = [
-        { name: "Google Scholar", url: "https://scholar.google.com/citations?user=poGrcV8AAAAJ&hl=en" },
-        { name: "Instagram", url: "https://www.instagram.com/almeida.jp_md/" },
-        { name: "LinkedIn", url: "https://www.linkedin.com/in/joão-paulo-almeida-a321913a" },
-        { name: "Twitter", url: "https://x.com/joao_p_almeida" }
+        { name: "LinkedIn", url: "https://www.linkedin.com/in/pratik-kishore-83072a184" }
     ];
 
     return (
@@ -57,18 +54,18 @@ const FAQAndMap = () => {
                 <div>
                     <h2 className="text-3xl font-bold mb-6">Our Location</h2>
                     <div className="aspect-video w-full rounded-xl overflow-hidden shadow-lg mb-4">
-                    <iframe 
-                    title='Dr. Almeida'
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d786721.4004631747!2d-86.77026425463303!3d39.62426607268672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814acbda14a8c4f%3A0x416117c437a374b5!2sIndiana%20University%20Health!5e0!3m2!1sen!2sin!4v1728734367204!5m2!1sen!2sin" 
-                    width="100%"
-                    height="100%" 
-                    style={{border:0}} allowFullScreen loading="lazy"></iframe>
+                        <iframe
+                            title='Dr. Pratik Kishore'
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14004.148117769947!2d77.17511!3d28.65863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02996c000001%3A0x2db44357731cc8a8!2sNew%20Rohtak%20Rd%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1709456789012!5m2!1sen!2sin"
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }} allowFullScreen loading="lazy"></iframe>
                     </div>
                     <div className="flex items-center text-gray-600 mb-4">
                         <MapPin className="mr-2" size={20} />
-                        <p>Indiana University School of Medicine, Indianapolis, IN</p>
+                        <p>Neuropoint Medical Centre, New Rohtak Road, New Delhi</p>
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">Connect with Dr. Almeida</h3>
+                    <h3 className="text-xl font-semibold mb-2">Connect with Dr. Pratik Kishore</h3>
                     <div className="flex flex-wrap gap-2">
                         {socialLinks.map((link, index) => (
                             <a

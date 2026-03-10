@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const position: [number, number] = [28.644171, 77.180213];
+  const position: [number, number] = [28.6605, 77.1869];
   const mapRef = useRef<HTMLDivElement>(null);
 
   const scrollToMap = () => {
@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
                 Expert Neurological Care
               </h1>
               <p className="text-xl md:text-2xl mb-8 leading-relaxed text-zinc-100">
-                Connect with Dr. Pratik Kishore, a leading neurologist and neurovascular intervention specialist at BLK-Max Super Speciality Hospital.
+                Connect with Dr. Pratik Kishore, a leading neurologist and neurovascular intervention specialist.
               </p>
               <a
                 href="#contact-form"
@@ -80,16 +80,16 @@ const Contact: React.FC = () => {
               <ContactItem
                 icon={<FaMapMarkerAlt className="text-teal-500" />}
                 title="Address"
-                content="BLK-Max Super Speciality Hospital, Pusa Road, New Delhi – 110005"
+                content="Neuropoint Medical Centre, New Rohtak Road, New Delhi"
                 gradientClass="from-teal-400 to-teal-600"
                 action={scrollToMap}
               />
               <ContactItem
                 icon={<FaPhone className="text-teal-500" />}
                 title="Phone"
-                content="+91-11-3040-3040"
+                content="+91-8368123184"
                 gradientClass="from-teal-400 to-teal-600"
-                action={() => window.location.href = 'tel:+911130403040'}
+                action={() => window.location.href = 'tel:+918368123184'}
               />
               <ContactItem
                 icon={<FaEnvelope className="text-teal-500" />}
@@ -199,7 +199,7 @@ const Contact: React.FC = () => {
                 />
                 <Marker position={position} icon={customIcon}>
                   <Popup>
-                    Dr. Pratik Kishore - BLK-Max Hospital
+                    Dr. Pratik Kishore - Neuropoint Medical Centre
                   </Popup>
                 </Marker>
               </MapContainer>

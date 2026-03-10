@@ -36,7 +36,7 @@ export const services: Service[] = [
         shortDescription: "Comprehensive care for acute stroke patients",
         longDescription: "Dr. Pratik Kishore specialized in the rapid diagnosis and treatment of acute ischemic and hemorrhagic strokes. Timely intervention is critical, and Dr. Kishore provides advanced protocols for stroke management to improve patient outcomes.",
         path: "/services/stroke-management",
-        image: "/images/stroke-management.jpg",
+        image: "/images/stroke-management.png",
         procedures: [
             { name: "IV Thrombolysis", description: "Administration of clot-busting medication in acute ischemic stroke" },
             { name: "Acute Monitoring", description: "Intensive monitoring of neurological status and vital signs" },
@@ -76,7 +76,7 @@ export const services: Service[] = [
         shortDescription: "Minimally invasive endovascular procedures",
         longDescription: "Neurovascular intervention involves advanced, minimally invasive techniques to treat brain aneurysms, stroke, and other cerebrovascular conditions using specialized catheters and imaging.",
         path: "/services/neurovascular-intervention",
-        image: "/images/neurovascular-intervention.jpg",
+        image: "/images/neurovascular-intervention.png",
         procedures: [
             { name: "Mechanical Thrombectomy", description: "Physical removal of a clot from a brain artery" },
             { name: "Aneurysm Coiling", description: "Filling an aneurysm with platinum coils to prevent rupture" },
@@ -106,7 +106,7 @@ export const services: Service[] = [
         faq: [
             {
                 question: "Is neurovascular intervention the same as brain surgery?",
-                answer: "No, these are endovascular procedures performed through blood vessels, usually starting from the groin or wrist."
+                answer: "No, these are endovascular procedures performed through blood vessels, usually starting from the groin or wrist, avoiding traditional open brain surgery."
             }
         ]
     },
@@ -116,7 +116,7 @@ export const services: Service[] = [
         shortDescription: "Advanced neurological testing",
         longDescription: "Precise diagnostic testing to evaluate the electrical activity of the brain and nerves. These tests are essential for diagnosing epilepsy, neuropathies, and nerve-related disorders.",
         path: "/services/neuro-diagnostics",
-        image: "/images/neuro-diagnostics.jpg",
+        image: "/images/neuro-diagnostics.png",
         procedures: [
             { name: "EEG", description: "Electroencephalogram to monitor brain waves" },
             { name: "EMG/NCV", description: "Tests to evaluate muscle and nerve function" },
@@ -155,7 +155,7 @@ export const services: Service[] = [
         shortDescription: "Botox and Movement Disorder therapy",
         longDescription: "Advanced therapeutic interventions for chronic neurological conditions, including movement disorders and migraine management using botox and nerve blocks.",
         path: "/services/specialized-therapies",
-        image: "/images/specialized-therapies.jpg",
+        image: "/images/specialized-therapies.png",
         procedures: [
             { name: "Botox Injections", description: "Therapy for chronic migraine and spasticity" },
             { name: "Nerve Block Therapy", description: "Localized injections for headache management" },
