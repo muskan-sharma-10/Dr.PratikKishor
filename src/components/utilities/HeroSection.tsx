@@ -1,37 +1,51 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Video, Brain, Microscope, Activity, Dna } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
-const HeroSection: React.FC = () => {
+interface HeroSectionProps {
+  showBackground?: boolean;
+  showSubtitle?: boolean;
+  onSpecialtyClick?: (specialtyText: string) => void;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({
+  showBackground = true,
+  showSubtitle = true,
+  onSpecialtyClick
+}) => {
+  const navigate = useNavigate();
   const specialties = [
-    { icon: Brain, text: "Stroke Management", image: "/images/stroke-management.png" },
-    { icon: Microscope, text: "Interventional Neurology", image: "/images/neurovascular-intervention.png" },
-    { icon: Activity, text: "Neuro Diagnostics", image: "/images/neuro-diagnostics.png" },
-    { icon: Dna, text: "Hyperacute Care", image: "/images/specialized-therapies.png" }
+    { icon: Brain, text: "Stroke Management", id: "stroke-management", image: "/images/stroke-management.png" },
+    { icon: Microscope, text: "Interventional Neurology", id: "neurovascular-intervention", image: "/images/neurovascular-intervention.png" },
+    { icon: Activity, text: "Neuro Diagnostics", id: "neuro-diagnostics", image: "/images/neuro-diagnostics.png" },
+    { icon: Dna, text: "Hyperacute Care", id: "specialized-therapies", image: "/images/specialized-therapies.png" }
   ];
 
   return (
     <section
-      className="relative w-full min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/neuropoint_board.jpg')" }}
+      className={`relative w-full min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden bg-cover bg-center ${!showBackground ? 'bg-transparent' : ''}`}
+      style={showBackground ? { backgroundImage: "url('/images/neuropoint_board.jpg')" } : {}}
     >
-      <div className="absolute inset-0">
-        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <defs>
-            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#ffffff" stopOpacity="0.1" />
-              <stop offset="100%" stopColor="#ffffff" stopOpacity="0.3" />
-            </linearGradient>
-          </defs>
-          <motion.path
-            d="M0,0 C25,50 75,50 100,0 L100,100 L0,100 Z"
-            fill="url(#grad1)"
-            initial={{ pathLength: 0 }}
-            animate={{ pathLength: 1 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
-          />
-        </svg>
-      </div>
+      {showBackground && (
+        <div className="absolute inset-0">
+          <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.1" />
+                <stop offset="100%" stopColor="#ffffff" stopOpacity="0.3" />
+              </linearGradient>
+            </defs>
+            <motion.path
+              d="M0,0 C25,50 75,50 100,0 L100,100 L0,100 Z"
+              fill="url(#grad1)"
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{ duration: 2, ease: "easeInOut" }}
+            />
+          </svg>
+        </div>
+      )}
       <div className="container mx-auto px-4 z-10">
         <div className="text-center mb-12">
           <motion.h1
@@ -42,14 +56,16 @@ const HeroSection: React.FC = () => {
           >
             Neurological Excellence
           </motion.h1>
-          <motion.p
-            className="text-xl md:text-3xl text-blue-200 mb-8 font-work-sans"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            Dr. Pratik Kishore
-          </motion.p>
+          {showSubtitle && (
+            <motion.p
+              className="text-xl md:text-3xl text-blue-200 mb-8 font-work-sans"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Dr. Pratik Kishore
+            </motion.p>
+          )}
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           {specialties.map((specialty, index) => (
@@ -59,6 +75,7 @@ const HeroSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              onClick={() => onSpecialtyClick && onSpecialtyClick(specialty.id)}
             >
               <img
                 src={specialty.image}
@@ -78,6 +95,7 @@ const HeroSection: React.FC = () => {
             className="bg-white text-teal-800 font-bold px-8 py-3 rounded-lg flex items-center justify-center text-lg transition-all duration-300 hover:bg-blue-100 shadow-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => navigate('/contact')}
           >
             Schedule Consultation
             <Calendar className="ml-3 w-5 h-5" />
@@ -86,6 +104,7 @@ const HeroSection: React.FC = () => {
             className="bg-teal-500 text-white font-bold px-8 py-3 rounded-lg flex items-center justify-center text-lg transition-all duration-300 hover:bg-blue-400 shadow-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => window.open('https://www.blkmaxhospital.com/book-an-appointment', '_blank')}
           >
             Virtual Appointment
             <Video className="ml-3 w-5 h-5" />

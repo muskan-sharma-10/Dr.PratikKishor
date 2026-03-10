@@ -13,6 +13,18 @@ const Services: React.FC = () => {
         setSelectedService(service);
     };
 
+    const handleSpecialtyClick = (id: string) => {
+        const service = services.find(s => s.id === id);
+        if (service) {
+            setSelectedService(service);
+            // Scroll to the content area
+            const element = document.getElementById('services-nav');
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    };
+
     const getCardColor = (index: number) => {
         const colors = [
             'bg-teal-50/95',
@@ -29,7 +41,8 @@ const Services: React.FC = () => {
                 <title>Neurology Services | Dr. Pratik Kishore</title>
                 <meta name="description" content="Explore advanced neurological and neurovascular services provided by Dr. Pratik Kishore, including stroke management, aneurysm treatment, and minimally invasive procedures." />
             </Helmet>
-            {/* Background Image with Overlay */}
+
+            {/* Single Background for the entire page */}
             <div
                 className="fixed inset-0 z-0"
                 style={{
@@ -42,10 +55,14 @@ const Services: React.FC = () => {
             </div>
 
             {/* Main Content */}
-            <div className="relative z-10 flex-grow mt-20">
-                <HeroSection />
+            <div className="relative z-10 flex-grow pt-20">
+                <HeroSection
+                    showBackground={false}
+                    showSubtitle={false}
+                    onSpecialtyClick={handleSpecialtyClick}
+                />
 
-                <section className="container mx-auto px-4 py-8 mt-10 md:mt-28">
+                <section id="services-nav" className="container mx-auto px-4 py-8 mt-10 md:mt-28">
                     <div className="flex flex-col md:flex-row">
                         {/* Mobile Accordion */}
                         <div className="md:hidden w-full mb-6">

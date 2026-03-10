@@ -16,13 +16,13 @@ const ServiceTemplatePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>{`${service.name} | Dr. Pratik Kisore Almeida`}</title>
+        <title>{`${service.name} | Dr. Pratik Kishore`}</title>
         <meta name="description" content={service.shortDescription} />
       </Helmet>
 
       <div className="min-h-screen relative">
         {/* Background Image with Overlay */}
-        <div 
+        <div
           className="fixed inset-0 z-0"
           style={{
             backgroundImage: `url(${service.image})`,
@@ -41,13 +41,13 @@ const ServiceTemplatePage: React.FC = () => {
           className="relative z-10 container mx-auto px-4 py-8 mt-20 sm:mt-28 lg:mt-32"
         >
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white">{service.name}</h1>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
               <div className="bg-zinc-100/95 rounded-xl p-6 mb-8">
                 <img src={service.image} alt={service.name} className="w-full h-48 sm:h-64 object-cover rounded-lg mb-6" />
                 <p className="text-lg sm:text-xl text-zinc-800 mb-6">{service.longDescription}</p>
-                
+
                 <div className="space-y-8">
                   {/* Procedures Section */}
                   <div>
@@ -99,7 +99,7 @@ const ServiceTemplatePage: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Sidebar Content */}
             <div className="space-y-6">
               {/* Benefits Card */}
