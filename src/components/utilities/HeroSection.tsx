@@ -64,6 +64,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               Dr. Pratik Kishore
+              <br />
+              <span className="text-lg md:text-xl text-white font-medium">Senior Consultant Neurologist and Neurovascular Interventionist</span>
             </motion.p>
           )}
         </div>

@@ -17,7 +17,7 @@ const DrKishoreHomeSection: React.FC = () => {
           </h2>
           <div className="space-y-6 text-center">
             <p className="text-zinc-700 text-md md:text-lg">
-              Dr. Pratik Kishore is a highly experienced Neurologist and Neurovascular Intervention Specialist. He is recognized for his expertise in diagnosing and treating a wide range of complex neurological and cerebrovascular disorders using both medical and minimally invasive interventional techniques.
+              Dr. Pratik Kishore is a <strong>Senior Consultant Neurologist and Neurovascular Interventionist</strong>. He is recognized for his expertise in diagnosing and treating a wide range of complex neurological and cerebrovascular disorders using both medical and minimally invasive interventional techniques.
             </p>
             <p className="text-zinc-700 text-lg">
               He combines a patient-centric approach with advanced procedural skills to deliver comprehensive neurological care — focusing on improving outcomes and quality of life for patients with acute and chronic neurological conditions.
