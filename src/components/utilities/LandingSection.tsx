@@ -18,12 +18,12 @@ const Carousel: React.FC = () => {
       title: "Advanced Neurovascular Intervention",
       subtitle: "Pioneering minimally invasive stroke and aneurysm treatments",
     },
-    {
-      url: "/images/3.jpg",
-      alt: "Dr. Pratik consulting",
-      title: "Patient-Centric Approach",
-      subtitle: "Dedicated to improving life through specialized brain and spine care",
-    },
+    // {
+    //   url: "/images/3.jpg",
+    //   alt: "Dr. Pratik consulting",
+    //   title: "Patient-Centric Approach",
+    //   subtitle: "Dedicated to improving life through specialized brain and spine care",
+    // },
     {
       url: "/images/4.jpg",
       alt: "Dr. Pratik research",
@@ -119,7 +119,7 @@ const Carousel: React.FC = () => {
             className="inline-flex items-center px-3 py-1 rounded-full bg-amber-500/20 backdrop-blur-md border border-amber-500/30 text-amber-200 text-sm font-medium mb-4"
           >
             <span className="w-2 h-2 rounded-full bg-amber-500 mr-2 animate-pulse" />
-            Senior Consultant – Neurology
+            Senior Consultant Neurologist and Neurovascular Interventionist
           </motion.div>
 
           <motion.h1

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes, FaLinkedin, FaChevronDown } from 'react-icons/fa';
+import { FaBars, FaTimes, FaLinkedin, FaGoogle, FaChevronDown } from 'react-icons/fa';
 import { services } from '../utilities/services/services';
 
 const Header: React.FC = () => {
@@ -24,7 +24,8 @@ const Header: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: <FaLinkedin className="w-5 h-5" />, url: 'https://www.linkedin.com/in/pratik-kishore-83072a184?utm_source=share_via&utm_content=profile&utm_medium=member_android' }
+    { icon: <FaLinkedin className="w-5 h-5" />, url: 'https://www.linkedin.com/in/pratik-kishore-83072a184?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+    { icon: <FaGoogle className="w-5 h-5" />, url: 'https://share.google/f5CQnYWopTuVjFRzD' }
   ];
 
   return (
