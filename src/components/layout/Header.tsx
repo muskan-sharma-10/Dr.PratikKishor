@@ -25,17 +25,23 @@ const Header: React.FC = () => {
 
   const socialLinks = [
     { icon: <FaLinkedin className="w-5 h-5" />, url: 'https://www.linkedin.com/in/pratik-kishore-83072a184?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
-    { icon: <FaGoogle className="w-5 h-5" />, url: 'https://share.google/f5CQnYWopTuVjFRzD' }
+    // { icon: <FaGoogle className="w-5 h-5" />, url: 'https://share.google/f5CQnYWopTuVjFRzD' }
   ];
 
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white'}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="text-amber-600 text-xl font-bold uppercase tracking-wider">
-            Dr. Pratik Kishore
-          </Link>
+         {/* Logo */}
+<Link to="/" className="flex items-center">
+    <img 
+      src={`/images/neurologo.jpeg?t=${new Date().getTime()}`} 
+      alt="Neuropoint Medical Center logo" 
+      className="h-20 w-auto object-contain"
+    />
+
+</Link>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">

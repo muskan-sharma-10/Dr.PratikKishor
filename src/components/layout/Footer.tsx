@@ -44,12 +44,12 @@ const Footer: React.FC = () => {
                             <FaPhone className="mr-3 text-zinc-400" />
                             +91-8368123184
                         </p>
-                        <p className="flex items-center mb-3 text-zinc-700">
+                        {/* <p className="flex items-center mb-3 text-zinc-700">
                             <FaEnvelope className="mr-3 text-zinc-400" />
                             <a href="mailto:appointment@neuropoint.com" className="hover:underline">
                                 appointment@neuropoint.com
                             </a>
-                        </p>
+                        </p> */}
                     </motion.div>
 
                     <motion.div
@@ -59,10 +59,12 @@ const Footer: React.FC = () => {
                     >
                         <h3 className="text-2xl font-pt-serif-regular mb-6 text-zinc-800">Specialties</h3>
                         <ul className="space-y-2 text-zinc-700">
-                            <li><Link to="/services/stroke-management" className="transition-colors">Stroke Management</Link></li>
-                            <li><Link to="/services/neurovascular-intervention" className="transition-colors">Neurovascular Intervention</Link></li>
-                            <li><Link to="/services/neuro-diagnostics" className="transition-colors">Neuro Diagnostics</Link></li>
-                            <li><Link to="/services/specialized-therapies" className="transition-colors">Specialized Therapies</Link></li>
+                            <li><Link to="/services/stroke-management" className="hover:text-amber-600 transition-colors">Stroke & Acute Stroke Management</Link></li>
+                            <li><Link to="/services/neurovascular-intervention" className="hover:text-amber-600 transition-colors">Neurovascular Intervention</Link></li>
+                            <li><Link to="/services/neuro-diagnostics" className="hover:text-amber-600 transition-colors">Neurophysiological Diagnostics</Link></li>
+                            <li><Link to="/services/specialized-therapies" className="hover:text-amber-600 transition-colors">Specialized Neurology Therapies</Link></li>
+                            <li><Link to="/services" className="hover:text-amber-600 transition-colors">Botox & Headache Therapy</Link></li>
+                            <li><Link to="/services" className="hover:text-amber-600 transition-colors">DBS & Parkinson's Care</Link></li>
                         </ul>
                     </motion.div>
 

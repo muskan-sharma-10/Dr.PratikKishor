@@ -153,10 +153,10 @@ const Carousel: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </button>
-            <div className="hidden sm:flex items-center px-6 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg text-white">
+            {/* <div className="hidden sm:flex items-center px-6 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg text-white">
               <span className="text-gray-300 mr-2">Practicing at:</span>
               <span className="font-medium">BLK-Max Hospital</span>
-            </div>
+            </div> */}
           </motion.div>
         </motion.div>
       </div>

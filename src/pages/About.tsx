@@ -128,6 +128,53 @@ const About: React.FC = () => {
         </div>
       ),
     },
+    certifications: {
+      icon: <FaAward />,
+      title: "Certifications",
+      content: (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-amber-50 rounded-xl p-4 border border-amber-200 shadow-sm flex flex-col h-full">
+            <div className="aspect-[4/3] rounded-lg overflow-hidden mb-4 border border-amber-100 shadow-inner group relative">
+              <img src="/images/certificates/nessan-e-eeg.jpg" alt="NESSAN e-EEG Course" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
+            </div>
+            <h4 className="text-amber-900 font-bold text-base mb-1">NESSAN e-EEG Course</h4>
+            <p className="text-amber-700 text-xs">(5th May – 3rd October, 2021)</p>
+            <p className="text-zinc-600 text-xs mt-2 line-clamp-2 italic">National Epilepsy Surgery Support Activity Network – 50 hours of EEG teaching & exit examination.</p>
+          </div>
+          
+          <div className="bg-amber-50 rounded-xl p-4 border border-amber-200 shadow-sm flex flex-col h-full">
+            <div className="aspect-[4/3] rounded-lg overflow-hidden mb-4 border border-amber-100 shadow-inner group relative">
+              <img src="/images/certificates/world-headache-society.jpg" alt="World Headache Society" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
+            </div>
+            <h4 className="text-amber-900 font-bold text-base mb-1">World Headache Society</h4>
+            <p className="text-amber-700 text-xs">WHS Headache and Facial Pain Certificate</p>
+            <p className="text-zinc-600 text-xs mt-2 italic">Awarded for fulfillment of requirements and passing the rigorous WHS Academy examination.</p>
+          </div>
+
+          <div className="bg-amber-50 rounded-xl p-4 border border-amber-200 shadow-sm flex flex-col h-full">
+            <div className="aspect-[4/3] rounded-lg overflow-hidden mb-4 border border-amber-100 shadow-inner group relative">
+              <img src="/images/certificates/medtronic-dbs.jpg" alt="DBS for Movement Disorders" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
+            </div>
+            <h4 className="text-amber-900 font-bold text-base mb-1">Deep Brain Stimulation</h4>
+            <p className="text-amber-700 text-xs">ECMT & Medtronic (April 2022)</p>
+            <p className="text-zinc-600 text-xs mt-2 italic">Certificate of participation in specialized training for Movement Disorders in Kochi, India.</p>
+          </div>
+
+          <div className="bg-amber-50 rounded-xl p-4 border border-amber-200 shadow-sm flex flex-col h-full">
+            <div className="aspect-[4/3] rounded-lg overflow-hidden mb-4 border border-amber-100 shadow-inner group relative">
+              <img src="/images/certificates/ies-video-eeg.jpg" alt="IES Video EEG Course" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
+            </div>
+            <h4 className="text-amber-900 font-bold text-base mb-1">Indian Epilepsy Society</h4>
+            <p className="text-amber-700 text-xs">IES Video EEG Course 2021</p>
+            <p className="text-zinc-600 text-xs mt-2 italic">Successfully completed the competency based assessment with required attendance.</p>
+          </div>
+        </div>
+      ),
+    },
     personal: {
       icon: <FaAward />,
       title: "Personal Life & Clinic",
@@ -211,7 +258,7 @@ const About: React.FC = () => {
               <div className="pt-4">
                 <h2 className="text-2xl font-semibold mb-3 text-white">Specializations</h2>
                 <ul className="grid grid-cols-2 gap-2 text-sm">
-                  {["Neurology", "Neurovascular Intervention", "Stroke Management", "Endovascular Procedures", "Neurophysiological Diagnostics", "Deep Brain Stimulation"].map((spec) => (
+                  {["Stroke Management", "Neurovascular Intervention", "Endovascular Procedures", "Epilepsy Management", "Neurophysiological Diagnostics", "Deep Brain Stimulation", "Botox Therapy", "Headache Management"].map((spec) => (
                     <li key={spec} className="flex items-center">
                       <span className="mr-2 text-white">&#8226;</span>
                       {spec}

@@ -17,15 +17,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   const navigate = useNavigate();
   const specialties = [
     { icon: Brain, text: "Stroke Management", id: "stroke-management", image: "/images/stroke-management.png" },
-    { icon: Microscope, text: "Interventional Neurology", id: "neurovascular-intervention", image: "/images/neurovascular-intervention.png" },
+    { icon: Microscope, text: "Neurovascular Intervention", id: "neurovascular-intervention", image: "/images/neurovascular-intervention.png" },
     { icon: Activity, text: "Neuro Diagnostics", id: "neuro-diagnostics", image: "/images/neuro-diagnostics.png" },
-    { icon: Dna, text: "Hyperacute Care", id: "specialized-therapies", image: "/images/specialized-therapies.png" }
+    { icon: Dna, text: "Specialized Therapies", id: "specialized-therapies", image: "/images/specialized-therapies.png" }
   ];
 
   return (
     <section
       className={`relative w-full min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden bg-cover bg-center ${!showBackground ? 'bg-transparent' : ''}`}
-      style={showBackground ? { backgroundImage: "url('/images/neuropoint_board.jpg')" } : {}}
+      style={showBackground ? { backgroundImage: "url('/images/g')" } : {}}
     >
       {showBackground && (
         <div className="absolute inset-0">
