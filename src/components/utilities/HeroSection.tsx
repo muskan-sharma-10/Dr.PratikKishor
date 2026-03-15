@@ -25,7 +25,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <section
       className={`relative w-full min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden bg-cover bg-center ${!showBackground ? 'bg-transparent' : ''}`}
-      style={showBackground ? { backgroundImage: "url('/images/g')" } : {}}
+      style={showBackground ? { backgroundImage: "url('/images/neuropoint_board.jpg')" } : {}}
     >
       {showBackground && (
         <div className="absolute inset-0">
