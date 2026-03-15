@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes, FaLinkedin, FaGoogle, FaChevronDown } from 'react-icons/fa';
+import { FaBars, FaTimes, FaLinkedin, FaChevronDown } from 'react-icons/fa';
 import { services } from '../utilities/services/services';
 
 const Header: React.FC = () => {
