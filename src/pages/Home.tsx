@@ -9,8 +9,8 @@ const Home: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>Dr. Pratik Kishore | Senior Consultant Neurologist & Neurovascular Interventionist</title>
-                <meta name="description" content="Welcome to the official website of Dr. Pratik Kishore, a leading Senior Consultant in Neurology and Neurovascular Intervention at BLK-Max Super Speciality Hospital, New Delhi, specializing in Stroke, Epilepsy, and Endovascular Procedures." />
+                <title>Neuropoint Medical Center | Dr. Pratik Kishore - Senior Consultant Neurologist</title>
+                <meta name="description" content="Welcome to Neuropoint Medical Center, spearheaded by Dr. Pratik Kishore, a leading Senior Consultant in Neurology and Neurovascular Intervention." />
             </Helmet>
             <main className="flex-grow mt-20">
                 <Carousel />

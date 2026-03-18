@@ -209,8 +209,8 @@ const About: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-800 to-gray-900 text-white mt-20">
       <Helmet>
-        <title>About Dr. Pratik Kishore | Expert Neurologist & Neurovascular Specialist</title>
-        <meta name="description" content="Learn about Dr. Pratik Kishore's education, extensive work experience, and achievements in neurology and neurovascular intervention." />
+        <title>About Neuropoint Medical Center | Dr. Pratik Kishore & Team</title>
+        <meta name="description" content="Learn about Neuropoint Medical Center, our expert team led by Dr. Pratik Kishore, and our commitment to advanced neurology and diagnostics." />
       </Helmet>
       {/* Hero Section */}
       {/* Hero Section */}

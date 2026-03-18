@@ -56,10 +56,10 @@ const MediaNews: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 mt-20">
       <Helmet>
-        <title>Media & News | Dr. Pratik Kishore</title>
+        <title>Media & News | Neuropoint Medical Center</title>
         <meta
           name="description"
-          content="Latest news, articles, and health education videos from Dr. Pratik Kishore."
+          content="Latest news, articles, and health education videos from Neuropoint Medical Center and Dr. Pratik Kishore."
         />
       </Helmet>
 

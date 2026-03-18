@@ -6,8 +6,8 @@ const PatientStories: React.FC = () => {
     return (
         <div className="min-h-screen bg-white mt-20">
             <Helmet>
-                <title>Patient Stories | Dr. Pratik Kishore</title>
-                <meta name="description" content="Success stories and testimonials from patients who have received care from Dr. Pratik Kishore for various neurological conditions." />
+                <title>Patient Stories | Neuropoint Medical Center</title>
+                <meta name="description" content="Success stories and testimonials from patients who have received care at Neuropoint Medical Center for various neurological conditions." />
             </Helmet>
             <section className="py-20 bg-amber-50">
                 <div className="container mx-auto px-4 text-center">

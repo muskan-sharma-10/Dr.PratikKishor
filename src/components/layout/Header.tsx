@@ -56,7 +56,7 @@ const Header: React.FC = () => {
             ))}
 
             {/* Services Dropdown - Desktop */}
-            <div className="relative group">
+            <div className="relative group h-20 flex items-center px-2 -mx-2">
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
                 className="flex items-center space-x-1 text-amber-600 hover:text-amber-800 transition-colors duration-200"
@@ -65,30 +65,35 @@ const Header: React.FC = () => {
                 <FaChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
               </button>
 
-              <div className="absolute hidden group-hover:block right-0 mt-2 w-64 bg-white rounded-md shadow-lg py-2">
-                <Link
-                  to="/services"
-                  className="block px-4 py-2 text-amber-600 hover:bg-amber-50 transition-colors duration-200"
+              <div className={`absolute right-0 top-[calc(100%-2px)] pt-2 w-64 transition-all duration-200 ${isServicesOpen ? 'block' : 'hidden'} group-hover:block z-[60]`}>
+                <div 
+                  className="bg-white rounded-md shadow-xl py-2 border border-gray-100 mt-1"
+                  onMouseLeave={() => setIsServicesOpen(false)}
                 >
-                  All Services
-                </Link>
-                <div className="border-t border-gray-100 my-2"></div>
-                {services.map((service) => (
                   <Link
-                    key={service.id}
-                    to={service.path}
+                    to="/services"
                     className="block px-4 py-2 text-amber-600 hover:bg-amber-50 transition-colors duration-200"
                   >
-                    {service.name}
+                    All Services
                   </Link>
-                ))}
-                <div className="border-t border-gray-100 my-2"></div>
-                <Link
-                  to='/contact'
-                  className="block px-4 py-2 text-amber-600 hover:bg-amber-50 transition-colors duration-200"
-                >
-                  Contact
-                </Link>
+                  <div className="border-t border-gray-100 my-2"></div>
+                  {services.map((service) => (
+                    <Link
+                      key={service.id}
+                      to={service.path}
+                      className="block px-4 py-2 text-amber-600 hover:bg-amber-50 transition-colors duration-200"
+                    >
+                      {service.name}
+                    </Link>
+                  ))}
+                  <div className="border-t border-gray-100 my-2"></div>
+                  <Link
+                    to='/contact'
+                    className="block px-4 py-2 text-amber-600 hover:bg-amber-50 transition-colors duration-200"
+                  >
+                    Contact
+                  </Link>
+                </div>
               </div>
             </div>
 

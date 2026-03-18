@@ -14,7 +14,8 @@ const Footer: React.FC = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h3 className="text-2xl font-bold mb-6 font-pt-serif-regular text-zinc-800">Dr. Pratik Kishore</h3>
+                        <h3 className="text-2xl font-bold mb-6 font-pt-serif-regular text-zinc-800">Neuropoint Medical Center</h3>
+                        <p className="mb-4 text-zinc-600 font-semibold">Dr. Pratik Kishore</p>
                         <p className="mb-4 text-zinc-600">Senior Consultant – Neurology & Neurovascular Intervention</p>
                         <p className="mb-4 text-zinc-600">
                             MBBS, MD, DM (Neurology), FNB (NVI)
@@ -90,7 +91,7 @@ const Footer: React.FC = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.8 }}
                 >
-                    <p className="mb-4">&copy; {new Date().getFullYear()} Dr. Pratik Kishore. All rights reserved.</p>
+                    <p className="mb-4">&copy; {new Date().getFullYear()} Neuropoint Medical Center. All rights reserved.</p>
                     <p className="text-sm mb-2">
                         <a href="/" className="text-zinc-700 hover:underline">Hospital Profile</a>
                     </p>
