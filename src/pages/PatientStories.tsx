@@ -6,7 +6,7 @@ const PatientStories: React.FC = () => {
     return (
         <div className="min-h-screen bg-white mt-20">
             <Helmet>
-                <title>Patient Stories | Neuropoint Medical Centre</title>
+                <title>Patient Stories | Dr. Pratik Kishore | Neuropoint Medical Centre</title>
                 <meta name="description" content="Success stories and testimonials from patients who have received care at Neuropoint Medical Centre for various neurological conditions." />
             </Helmet>
             <section className="py-20 bg-amber-50">

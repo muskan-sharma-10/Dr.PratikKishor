@@ -211,6 +211,33 @@ const About: React.FC = () => {
       <Helmet>
         <title>About Neuropoint Medical Centre | Dr. Pratik Kishore & Team</title>
         <meta name="description" content="Learn about Neuropoint Medical Centre, our expert team led by Dr. Pratik Kishore, and our commitment to advanced neurology and diagnostics." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "@id": "https://www.delhineuropointcentre.com/#drpratikkishore",
+            "name": "Dr. Pratik Kishore",
+            "jobTitle": "Senior Consultant Neurologist and Neurovascular Interventionist",
+            "url": "https://www.delhineuropointcentre.com/about",
+            "image": "https://www.delhineuropointcentre.com/images/dr_pratik_real.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/pratik-kishore-83072a184",
+              "https://www.blkmaxhospital.com/doctor/dr-pratik-kishore"
+            ],
+            "affiliation": [
+              {
+                "@type": "MedicalOrganization",
+                "name": "BLK-Max Super Speciality Hospital"
+              },
+              {
+                "@type": "MedicalBusiness",
+                "name": "Neuropoint Medical Centre"
+              }
+            ]
+          }
+          `}
+        </script>
       </Helmet>
       {/* Hero Section */}
       {/* Hero Section */}
