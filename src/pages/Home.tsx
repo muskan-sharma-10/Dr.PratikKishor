@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import DrPratikKishoreHomeSection from "../components/utilities/HomeAbout";
-import AppointmentSection from "../components/utilities/AppointmentSection";
+import AppointmentSection from "../components/utilities/services/AppointmentSection";
 import Carousel from "../components/utilities/LandingSection";
 import AlternatingServicesShowcase from "../components/utilities/services/InteractiveServiceShowcase";
 

@@ -5,8 +5,10 @@ import { services, Service } from '../components/utilities/services/services';
 import { Card, CardHeader, CardContent } from '../components/utilities/card';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '../components/utilities/services/accordion';
 import HeroSection from '../components/utilities/HeroSection';
+import AppointmentSection from '../components/utilities/services/AppointmentSection';
 
 const Services: React.FC = () => {
+
     const [selectedService, setSelectedService] = useState<Service | null>(services[0]);
 
     const handleServiceClick = (service: Service) => {
@@ -220,19 +222,13 @@ const Services: React.FC = () => {
                                                 ))}
                                             </Accordion>
                                         </div>
-
-                                        {/* CTA Button */}
-                                        <div className="mt-8 text-center">
-                                            <button className="bg-teal-600 text-white px-8 py-3 rounded-lg hover:bg-teal-700 transition-colors text-lg font-semibold shadow-lg">
-                                                Schedule a Consultation
-                                            </button>
-                                        </div>
                                     </CardContent>
                                 </Card>
                             )}
                         </main>
                     </div>
                 </section>
+                <AppointmentSection />
             </div>
         </main>
     );

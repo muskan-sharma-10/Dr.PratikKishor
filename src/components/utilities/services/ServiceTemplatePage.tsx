@@ -4,8 +4,10 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { services, Service } from './services';
 import { FaCheckCircle, FaExclamationTriangle } from 'react-icons/fa';
+import AppointmentSection from './AppointmentSection';
 
 const ServiceTemplatePage: React.FC = () => {
+
   const { id } = useParams<{ id: string }>();
   const service: Service | undefined = services.find(s => s.id === id);
 
@@ -149,16 +151,8 @@ const ServiceTemplatePage: React.FC = () => {
             </div>
           </div>
 
-          {/* CTA Section */}
-          <div className="mt-12 text-center">
-            <h2 className="text-3xl font-semibold mb-6 text-white">Ready to Take the Next Step?</h2>
-            <p className="text-xl mb-6 text-zinc-200">Schedule a consultation with Dr. Pratik Kisore Almeida to discuss your treatment options.</p>
-            <a
-              href="/contact"
-              className="inline-block bg-teal-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-teal-700 transition duration-300 shadow-lg"
-            >
-              Contact Us
-            </a>
+          <div className="mt-12">
+            <AppointmentSection />
           </div>
         </motion.div>
       </div>
