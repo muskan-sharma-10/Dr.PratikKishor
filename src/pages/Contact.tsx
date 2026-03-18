@@ -47,9 +47,9 @@ const Contact: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Neuropoint Medical Center | Dr. Pratik Kishore</title>
-        <meta name="description" content="Schedule a consultation at Neuropoint Medical Center with Dr. Pratik Kishore, a leading neurologist and neurovascular intervention specialist in New Delhi." />
-        <meta name="keywords" content="Neuropoint Medical Center, Dr. Pratik Kishore, Neurologist, Neurovascular, Stroke Management, Delhi" />
+        <title>Contact Neuropoint Medical Centre | Dr. Pratik Kishore</title>
+        <meta name="description" content="Schedule a consultation at Neuropoint Medical Centre with Dr. Pratik Kishore, a leading neurologist and neurovascular intervention specialist in New Delhi." />
+        <meta name="keywords" content="Neuropoint Medical Centre, Dr. Pratik Kishore, Neurologist, Neurovascular, Stroke Management, Delhi" />
       </Helmet>
       <main className="py-8 mt-6 md:mt-10 bg-zinc-50">
         <section className="hero relative overflow-hidden bg-gradient-to-r from-teal-600 to-teal-800 text-white py-24 md:py-32">

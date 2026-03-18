@@ -9,8 +9,8 @@ const Home: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>Neuropoint Medical Center | Dr. Pratik Kishore - Senior Consultant Neurologist</title>
-                <meta name="description" content="Welcome to Neuropoint Medical Center, spearheaded by Dr. Pratik Kishore, a leading Senior Consultant in Neurology and Neurovascular Intervention." />
+                <title>Neuropoint Medical Centre | Dr. Pratik Kishore - Senior Consultant Neurologist</title>
+                <meta name="description" content="Welcome to Neuropoint Medical Centre, spearheaded by Dr. Pratik Kishore, a leading Senior Consultant in Neurology and Neurovascular Intervention." />
             </Helmet>
             <main className="flex-grow mt-20">
                 <Carousel />

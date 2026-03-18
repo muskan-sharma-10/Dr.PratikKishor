@@ -40,8 +40,8 @@ const Services: React.FC = () => {
     return (
         <main className="relative min-h-screen">
             <Helmet>
-                <title>Neurology Services | Neuropoint Medical Center</title>
-                <meta name="description" content="Explore advanced neurological and neurovascular services at Neuropoint Medical Center, including stroke management, aneurysm treatment, and minimally invasive procedures." />
+                <title>Neurology Services | Neuropoint Medical Centre</title>
+                <meta name="description" content="Explore advanced neurological and neurovascular services at Neuropoint Medical Centre, including stroke management, aneurysm treatment, and minimally invasive procedures." />
             </Helmet>
 
             {/* Single Background for the entire page */}
