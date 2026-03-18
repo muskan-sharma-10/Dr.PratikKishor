@@ -8,6 +8,28 @@ const PatientStories: React.FC = () => {
             <Helmet>
                 <title>Patient Stories | Dr. Pratik Kishore | Neuropoint Medical Centre</title>
                 <meta name="description" content="Success stories and testimonials from patients who have received care at Neuropoint Medical Centre for various neurological conditions." />
+                <script type="application/ld+json">
+                  {`
+                  {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.delhineuropointcentre.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Patient Stories",
+                        "item": "https://www.delhineuropointcentre.com/patient-stories"
+                      }
+                    ]
+                  }
+                  `}
+                </script>
             </Helmet>
             <section className="py-20 bg-amber-50">
                 <div className="container mx-auto px-4 text-center">

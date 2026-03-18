@@ -42,6 +42,28 @@ const Services: React.FC = () => {
             <Helmet>
                 <title>Neurology Services | Dr. Pratik Kishore | Neuropoint Medical Centre</title>
                 <meta name="description" content="Explore advanced neurological and neurovascular services at Neuropoint Medical Centre, including stroke management, aneurysm treatment, and minimally invasive procedures." />
+                <script type="application/ld+json">
+                  {`
+                  {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.delhineuropointcentre.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Services",
+                        "item": "https://www.delhineuropointcentre.com/services"
+                      }
+                    ]
+                  }
+                  `}
+                </script>
             </Helmet>
 
             {/* Single Background for the entire page */}

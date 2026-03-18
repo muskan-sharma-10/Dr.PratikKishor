@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes, FaLinkedin, FaChevronDown } from 'react-icons/fa';
 import { Brain } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 import { services } from '../utilities/services/services';
 
 const Header: React.FC = () => {
@@ -31,6 +32,54 @@ const Header: React.FC = () => {
 
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white'}`}>
+      <Helmet>
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "SiteNavigationElement",
+                "position": 1,
+                "name": "Home",
+                "url": "https://www.delhineuropointcentre.com/"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "position": 2,
+                "name": "About",
+                "url": "https://www.delhineuropointcentre.com/about"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "position": 3,
+                "name": "Services",
+                "url": "https://www.delhineuropointcentre.com/services"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "position": 4,
+                "name": "Patient Stories",
+                "url": "https://www.delhineuropointcentre.com/patient-stories"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "position": 5,
+                "name": "Media & News",
+                "url": "https://www.delhineuropointcentre.com/media-news"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "position": 6,
+                "name": "Contact",
+                "url": "https://www.delhineuropointcentre.com/contact"
+              }
+            ]
+          }
+          `}
+        </script>
+      </Helmet>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
 {/* Logo */}

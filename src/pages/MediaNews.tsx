@@ -61,6 +61,28 @@ const MediaNews: React.FC = () => {
           name="description"
           content="Latest news, articles, and health education videos from Neuropoint Medical Centre and Dr. Pratik Kishore."
         />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.delhineuropointcentre.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Media & News",
+                "item": "https://www.delhineuropointcentre.com/media-news"
+              }
+            ]
+          }
+          `}
+        </script>
       </Helmet>
 
       {/* HERO */}
