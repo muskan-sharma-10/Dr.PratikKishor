@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaPhone, FaMapMarkerAlt, FaLinkedinIn } from 'react-icons/fa';
+import { FaPhone, FaMapMarkerAlt, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const Footer: React.FC = () => {
@@ -45,12 +45,12 @@ const Footer: React.FC = () => {
                             <FaPhone className="mr-3 text-zinc-400" />
                             +91-8368123184
                         </p>
-                        {/* <p className="flex items-center mb-3 text-zinc-700">
+                        <p className="flex items-center mb-3 text-zinc-700">
                             <FaEnvelope className="mr-3 text-zinc-400" />
-                            <a href="mailto:appointment@neuropoint.com" className="hover:underline">
-                                appointment@neuropoint.com
+                            <a href="mailto:neuropointmedical@gmail.com" className="hover:underline break-all">
+                                neuropointmedical@gmail.com
                             </a>
-                        </p> */}
+                        </p>
                     </motion.div>
 
                     <motion.div
