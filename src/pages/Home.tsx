@@ -10,8 +10,8 @@ const Home: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>Neuropoint Medical Centre | Dr. Pratik Kishore - Senior Consultant Neurologist</title>
-                <meta name="description" content="Welcome to Neuropoint Medical Centre, spearheaded by Dr. Pratik Kishore, a leading Senior Consultant in Neurology and Neurovascular Intervention." />
+                <title>Dr. Pratik Kishore | Best Neurologist in Karol Bagh, Delhi</title>
+                <meta name="description" content="Consult Dr. Pratik Kishore, the best neurologist in Karol Bagh, Delhi at Neuropoint Medical Centre. Expert in stroke, headache, epilepsy & neurovascular interventions." />
                 <script type="application/ld+json">
                     {`
                     [

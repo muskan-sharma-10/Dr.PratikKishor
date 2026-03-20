@@ -209,8 +209,8 @@ const About: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-800 to-gray-900 text-white mt-20">
       <Helmet>
-        <title>About Neuropoint Medical Centre | Dr. Pratik Kishore & Team</title>
-        <meta name="description" content="Learn about Neuropoint Medical Centre, our expert team led by Dr. Pratik Kishore, and our commitment to advanced neurology and diagnostics." />
+        <title>About Dr. Pratik Kishore | Best Neurologist in Karol Bagh</title>
+        <meta name="description" content="Learn about Dr. Pratik Kishore, the best neurologist in Karol Bagh, New Delhi, and the expert team at Neuropoint Medical Centre." />
         <script type="application/ld+json">
           {`
           {
