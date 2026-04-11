@@ -7,6 +7,8 @@ import Contact from './pages/Contact';
 import Services from './pages/Services';
 import MediaNews from './pages/MediaNews';
 import PatientStories from './pages/PatientStories';
+import Blog from './pages/Blog';
+import BlogDetail from './pages/BlogDetail';
 import ServiceTemplatePage from './components/utilities/services/ServiceTemplatePage';
 import Layout from './components/layout/Layout';
 
@@ -33,6 +35,8 @@ const App: React.FC = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/media-news' element={<MediaNews />} />
         <Route path='/patient-stories' element={<PatientStories />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/blog/:slug' element={<BlogDetail />} />
       </Routes>
     </Layout>
   );

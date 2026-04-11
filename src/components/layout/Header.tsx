@@ -20,6 +20,7 @@ const Header: React.FC = () => {
   }, []);
 
   const menuItems = [
+    { title: 'Blog', path: '/blog' },
     { title: 'Media & News', path: '/media-news' },
     { title: 'Patient Stories', path: '/patient-stories' },
     { title: "Meet The Expert", path: '/about' },
