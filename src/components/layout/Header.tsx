@@ -83,22 +83,22 @@ const Header: React.FC = () => {
       </Helmet>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-{/* Logo */}
-<Link to="/" className="flex items-center group">
-    <div className="flex items-center space-x-2 md:space-x-3">
-        <div className="bg-amber-50 p-2 rounded-xl group-hover:bg-amber-100 transition-colors duration-300">
-            <Brain className="w-8 h-8 md:w-10 md:h-10 text-amber-600" />
-        </div>
-        <div className="flex flex-col md:flex-row md:items-baseline md:space-x-2">
-            <span className="text-xl md:text-2xl font-bold text-zinc-800 tracking-tight leading-none uppercase font-raleway">
-                Neuropoint
-            </span>
-            <span className="text-xs md:text-sm font-semibold text-amber-600 uppercase tracking-widest leading-none font-raleway">
-                Medical Centre
-            </span>
-        </div>
-    </div>
-</Link>
+          {/* Logo */}
+          <Link to="/" className="flex items-center group">
+            <div className="flex items-center space-x-2 md:space-x-3">
+              <div className="bg-amber-50 p-2 rounded-xl group-hover:bg-amber-100 transition-colors duration-300">
+                <Brain className="w-8 h-8 md:w-10 md:h-10 text-amber-600" />
+              </div>
+              <div className="flex flex-col md:flex-row md:items-baseline md:space-x-2">
+                <span className="text-xl md:text-2xl font-bold text-zinc-800 tracking-tight leading-none uppercase font-raleway">
+                  Neuropoint
+                </span>
+                <span className="text-xs md:text-sm font-semibold text-amber-600 uppercase tracking-widest leading-none font-raleway">
+                  Medical Centre
+                </span>
+              </div>
+            </div>
+          </Link>
 
 
           {/* Desktop Navigation */}
@@ -124,7 +124,7 @@ const Header: React.FC = () => {
               </button>
 
               <div className={`absolute right-0 top-[calc(100%-2px)] pt-2 w-64 transition-all duration-200 ${isServicesOpen ? 'block' : 'hidden'} z-[60]`}>
-                <div 
+                <div
                   className="bg-white rounded-md shadow-xl py-2 border border-gray-100 mt-1"
                 >
                   <Link

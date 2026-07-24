@@ -7,12 +7,9 @@ import {
   FaNewspaper,
   FaVideo,
 } from "react-icons/fa";
+import YouTubeShorts from "../components/utilities/YouTubeShorts";
 
 const videos = [
-  {
-    id: "OoP2zaMbLHo",
-    title: "Brain Stroke Awareness",
-  },
   {
     id: "-bCl4saVchc",
     title: "Medical Discussion on Health",
@@ -144,6 +141,9 @@ const MediaNews: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* YOUTUBE SHORTS */}
+      <YouTubeShorts />
 
       {/* VIDEO GALLERY */}
       <section className="py-16 bg-white">

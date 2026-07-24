@@ -5,6 +5,7 @@ import AppointmentSection from "../components/utilities/services/AppointmentSect
 import Carousel from "../components/utilities/LandingSection";
 import AlternatingServicesShowcase from "../components/utilities/services/InteractiveServiceShowcase";
 import ConditionsWeTreat from "../components/utilities/ConditionsWeTreat";
+import YouTubeShorts from "../components/utilities/YouTubeShorts";
 
 const Home: React.FC = () => {
     return (
@@ -93,6 +94,10 @@ const Home: React.FC = () => {
                 <DrPratikKishoreHomeSection />
                 <AlternatingServicesShowcase />
                 <ConditionsWeTreat />
+                <YouTubeShorts
+                    title="Featured YouTube Shorts"
+                    subtitle="Watch quick, expert health tips and stroke awareness videos by Dr. Pratik Kishore."
+                />
                 <AppointmentSection />
             </main>
         </>
