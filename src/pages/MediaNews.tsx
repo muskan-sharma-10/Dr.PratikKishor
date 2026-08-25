@@ -8,6 +8,7 @@ import {
   FaVideo,
 } from "react-icons/fa";
 import YouTubeShorts from "../components/utilities/YouTubeShorts";
+import ClinicVideos from "../components/utilities/ClinicVideos";
 
 const videos = [
   {
@@ -141,6 +142,12 @@ const MediaNews: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* CLINIC VIDEOS */}
+      <ClinicVideos
+        title="Neuropoint Clinic Video Series & Insights"
+        subtitle="Explore informative video walkthroughs, expert neurological guidance, and clinic highlights directly from Neuropoint Medical Centre."
+      />
 
       {/* YOUTUBE SHORTS */}
       <YouTubeShorts />

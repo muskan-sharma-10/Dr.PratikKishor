@@ -6,6 +6,7 @@ import Carousel from "../components/utilities/LandingSection";
 import AlternatingServicesShowcase from "../components/utilities/services/InteractiveServiceShowcase";
 import ConditionsWeTreat from "../components/utilities/ConditionsWeTreat";
 import YouTubeShorts from "../components/utilities/YouTubeShorts";
+import ClinicVideos from "../components/utilities/ClinicVideos";
 
 const Home: React.FC = () => {
     return (
@@ -94,6 +95,10 @@ const Home: React.FC = () => {
                 <DrPratikKishoreHomeSection />
                 <AlternatingServicesShowcase />
                 <ConditionsWeTreat />
+                <ClinicVideos
+                    title="Neuropoint Medical Centre in Action"
+                    subtitle="Watch our clinic tour, diagnostic capabilities, and specialized neurological guidance by Dr. Pratik Kishore."
+                />
                 <YouTubeShorts
                     title="Featured YouTube Shorts"
                     subtitle="Watch quick, expert health tips and stroke awareness videos by Dr. Pratik Kishore."
