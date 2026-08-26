@@ -12,16 +12,14 @@ import ClinicVideos from "../components/utilities/ClinicVideos";
 
 const videos = [
   {
-    id: "-bCl4saVchc",
-    title: "Medical Discussion on Health",
-  },
-  {
     id: "JVcUU07ljBw",
-    title: "Stroke Management & Prevention",
+    title: "Brain Stroke Awareness & Emergency Care Discussion (Zee News Feature)",
+    category: "Stroke Awareness",
   },
   {
     id: "74EUP3FJT_s",
-    title: "Expert Medical Advice",
+    title: "Venous Sinus Stenting Restores Vision: Patient Success Story (BLK-Max Hospital)",
+    category: "Patient Recovery",
   },
 ];
 
@@ -107,16 +105,15 @@ const MediaNews: React.FC = () => {
           <div className="md:flex">
             <div className="md:w-1/2 p-10">
               <div className="flex items-center text-amber-600 font-bold mb-4">
-                <FaVideo className="mr-2" /> Featured Video
+                <FaVideo className="mr-2" /> Featured Health Discussion
               </div>
 
-              <h2 className="text-3xl font-bold mb-6">
-                A Message from Dr. Pratik Kishore
+              <h2 className="text-3xl font-bold mb-4">
+                Tinnitus: कानों में लगातार बजती आवाज़ के लक्षण, कारण और सही उपचार
               </h2>
 
               <p className="text-gray-600 mb-8">
-                Join Dr. Pratik Kishore as he discusses the latest advancements
-                in neurology and shares vital tips for maintaining brain health.
+                Dr. Pratik Kishore discusses Tinnitus (ringing or buzzing sounds in the ear), why you shouldn't ignore it, underlying neurological factors, and modern treatment approaches.
               </p>
 
               <a
@@ -134,7 +131,7 @@ const MediaNews: React.FC = () => {
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/-bCl4saVchc"
-                title="Doctor Message"
+                title="Tinnitus Symptoms & Causes - Dr. Pratik Kishore"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
@@ -146,7 +143,7 @@ const MediaNews: React.FC = () => {
       {/* CLINIC VIDEOS */}
       <ClinicVideos
         title="Neuropoint Clinic Video Series & Insights"
-        subtitle="Explore informative video walkthroughs, expert neurological guidance, and clinic highlights directly from Neuropoint Medical Centre."
+        subtitle="Explore informative neurological case studies, expert doctor guidance, and stroke care insights directly from Neuropoint Medical Centre."
       />
 
       {/* YOUTUBE SHORTS */}
@@ -168,10 +165,13 @@ const MediaNews: React.FC = () => {
             </a>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {videos.map((video) => (
-              <div key={video.id}>
-                <div className="aspect-video rounded-xl overflow-hidden shadow">
+              <div
+                key={video.id}
+                className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col"
+              >
+                <div className="aspect-video bg-black overflow-hidden">
                   <iframe
                     className="w-full h-full"
                     src={`https://www.youtube.com/embed/${video.id}`}
@@ -181,7 +181,14 @@ const MediaNews: React.FC = () => {
                   ></iframe>
                 </div>
 
-                <h3 className="text-lg font-bold mt-3">{video.title}</h3>
+                <div className="p-5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-amber-100 text-amber-800 mb-2">
+                      {video.category}
+                    </span>
+                    <h3 className="text-lg font-bold text-gray-900 line-clamp-2">{video.title}</h3>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

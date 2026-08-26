@@ -97,11 +97,11 @@ const Home: React.FC = () => {
                 <ConditionsWeTreat />
                 <ClinicVideos
                     title="Neuropoint Medical Centre in Action"
-                    subtitle="Watch our clinic tour, diagnostic capabilities, and specialized neurological guidance by Dr. Pratik Kishore."
+                    subtitle="Watch clinical insights, patient case studies, and specialized neurological guidance by Dr. Pratik Kishore."
                 />
                 <YouTubeShorts
                     title="Featured YouTube Shorts"
-                    subtitle="Watch quick, expert health tips and stroke awareness videos by Dr. Pratik Kishore."
+                    subtitle="Watch quick, expert health tips and stroke awareness reels by Dr. Pratik Kishore."
                 />
                 <AppointmentSection />
             </main>

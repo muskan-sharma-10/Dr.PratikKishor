@@ -12,15 +12,15 @@ export interface ShortItem {
 export const youtubeShortsData: ShortItem[] = [
   {
     id: "KCqzvRflYCo",
-    title: "Neurology Insights & Brain Health Care",
-    description: "Key facts about neurological health and prevention tips by Dr. Pratik Kishore.",
-    category: "Neurology Care",
+    title: "Neuro Conference | BLK-Max Super Speciality Hospital",
+    description: "Dr. Pratik Kishore presenting key neurology discussions at the Neuro Conference.",
+    category: "Neuro Conference",
   },
   {
     id: "OoP2zaMbLHo",
-    title: "Brain Stroke Awareness & Early Symptoms",
-    description: "Learn the warning signs of stroke and the critical golden hour response.",
-    category: "Stroke Awareness",
+    title: "Stroke Treatment: How Paralysis Can Be Reversed During Surgery",
+    description: "Learn how acute neurovascular intervention and timely surgery help reverse stroke paralysis.",
+    category: "Stroke Treatment",
   },
 ];
 

@@ -94,7 +94,7 @@ const PatientStories: React.FC = () => {
             {/* CLINIC VIDEO HIGHLIGHTS */}
             <ClinicVideos
                 title="Clinical Recovery & Patient Care Videos"
-                subtitle="Watch informative clinical walkthroughs, stroke awareness, and rehabilitation insights filmed directly at Neuropoint Medical Centre."
+                subtitle="Watch informative clinical case studies, stroke awareness, and rehabilitation insights by Dr. Pratik Kishore."
             />
 
             {/* PATIENT TESTIMONIAL CARDS */}

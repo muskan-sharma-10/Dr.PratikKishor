@@ -18,7 +18,7 @@ export interface ClinicVideoItem {
   id: string;
   src: string;
   title: string;
-  category: "Clinic Tour" | "Clinical Insights" | "Stroke Care" | "Diagnostics" | "Recovery & Care";
+  category: "Brain Health" | "Clinical Insights" | "Stroke Care" | "Recovery & Care";
   description: string;
   highlights: string[];
   tag?: string;
@@ -28,30 +28,30 @@ export const clinicVideosData: ClinicVideoItem[] = [
   {
     id: "video-1",
     src: "/videos/neuropointcentre1.mp4",
-    title: "Neuropoint Medical Centre Tour & Clinical Overview",
-    category: "Clinic Tour",
+    title: "Understanding Brain Cells & Neurological Health",
+    category: "Brain Health",
     description:
-      "A comprehensive walkthrough of our modern neurology outpatient clinic, diagnostic facilities, and patient-first care environment.",
+      "Dr. Pratik Kishore explains fundamental brain functions, neuron health, and vital guidance on recognizing neurological issues.",
     highlights: [
-      "Modern Outpatient Consultation Suites",
-      "Advanced Diagnostic Setup",
-      "Compassionate Patient Care Support",
+      "Brain Cells & Neural Communication",
+      "Early Symptom Awareness",
+      "Preventive Neurological Care",
     ],
-    tag: "Featured Walkthrough",
+    tag: "Brain Health",
   },
   {
     id: "video-2",
     src: "/videos/neuropointcentre2.mp4",
-    title: "Advanced Neurological Consultation & Patient Care",
+    title: "Movement Disorder & Parkinson's: Gait Freezing Assessment",
     category: "Clinical Insights",
     description:
-      "Dr. Pratik Kishore explains personalized clinical evaluations for complex neurological and nerve conditions.",
+      "Clinical evaluation of gait freezing and dyskinesia in a movement disorder patient prior to therapeutic programming.",
     highlights: [
-      "Evidence-Based Neurological Evaluation",
-      "Personalized Treatment Protocols",
-      "Specialized Patient Guidance",
+      "Gait Freezing Clinical Evaluation",
+      "Movement Disorder & Dyskinesia Analysis",
+      "Pre-Programming Assessment Protocol",
     ],
-    tag: "Clinical Care",
+    tag: "Clinical Case Study",
   },
   {
     id: "video-3",
@@ -59,41 +59,27 @@ export const clinicVideosData: ClinicVideoItem[] = [
     title: "Brain Stroke Awareness & Emergency Golden Hour Care",
     category: "Stroke Care",
     description:
-      "Crucial awareness on recognizing early stroke symptoms (BE FAST) and timely acute neurovascular interventions.",
+      "Dr. Pratik Kishore emphasizes the crucial importance of recognizing early stroke signs (BE FAST) and rapid golden hour medical intervention.",
     highlights: [
-      "Recognizing Early Warning Signs",
+      "Recognizing Early Stroke Signs (BE FAST)",
       "Importance of Golden Hour Response",
-      "Preventive Stroke Strategies",
+      "Acute Neurovascular Care Guidance",
     ],
     tag: "Stroke Awareness",
   },
   {
     id: "video-4",
-    src: "/videos/neuropointcentre4.mp4",
-    title: "Advanced Neuro-Diagnostics & Precision Treatment",
-    category: "Diagnostics",
-    description:
-      "State-of-the-art diagnostic evaluations for headache, epilepsy, tremors, neuropathy, and spine disorders.",
-    highlights: [
-      "High-Precision Neuro-Assessments",
-      "Tailored Treatment Roadmaps",
-      "Multidisciplinary Diagnostics",
-    ],
-    tag: "Diagnostic Care",
-  },
-  {
-    id: "video-5",
     src: "/videos/neuropointcentre5.mp4",
-    title: "Neurological Recovery, Rehabilitation & Brain Wellness",
+    title: "Neurological Recovery, Rehabilitation & Long-Term Brain Care",
     category: "Recovery & Care",
     description:
-      "Step-by-step guidance on neuro-rehabilitation, long-term wellness, and proactive lifestyle habits for optimal brain health.",
+      "In-depth clinical guidance on neurological disease recovery, post-acute neuro-rehabilitation, and long-term brain health practices.",
     highlights: [
       "Post-Stroke Neuro-Rehab Support",
-      "Cognitive & Mobility Recovery",
+      "Cognitive & Mobility Recovery Guidance",
       "Long-Term Brain Health Practices",
     ],
-    tag: "Patient Wellness",
+    tag: "Doctor Guidance",
   },
 ];
 
@@ -108,10 +94,9 @@ interface ClinicVideosProps {
 
 const categories = [
   "All Videos",
-  "Clinic Tour",
+  "Brain Health",
   "Clinical Insights",
   "Stroke Care",
-  "Diagnostics",
   "Recovery & Care",
 ] as const;
 
