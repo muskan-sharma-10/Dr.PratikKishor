@@ -18,7 +18,7 @@ export interface ClinicVideoItem {
   id: string;
   src: string;
   title: string;
-  category: "Brain Health" | "Clinical Insights" | "Stroke Care" | "Recovery & Care";
+  category: "Brain Health" | "Clinical Insights" | "Stroke Care";
   description: string;
   highlights: string[];
   tag?: string;
@@ -70,14 +70,14 @@ export const clinicVideosData: ClinicVideoItem[] = [
   {
     id: "video-4",
     src: "/videos/neuropointcentre5.mp4",
-    title: "Neurological Recovery, Rehabilitation & Long-Term Brain Care",
-    category: "Recovery & Care",
+    title: "Approach to Tremor: Causes, Diagnosis & Treatment",
+    category: "Clinical Insights",
     description:
-      "In-depth clinical guidance on neurological disease recovery, post-acute neuro-rehabilitation, and long-term brain health practices.",
+      "Dr. Pratik Kishore explains the clinical approach to tremor — differentiating essential tremor, Parkinsonian tremor, and other movement-related causes with guidance on diagnosis and management.",
     highlights: [
-      "Post-Stroke Neuro-Rehab Support",
-      "Cognitive & Mobility Recovery Guidance",
-      "Long-Term Brain Health Practices",
+      "Types of Tremor & Differential Diagnosis",
+      "Tremor vs. Parkinson's Disease",
+      "Treatment & Management Options",
     ],
     tag: "Doctor Guidance",
   },
@@ -97,7 +97,6 @@ const categories = [
   "Brain Health",
   "Clinical Insights",
   "Stroke Care",
-  "Recovery & Care",
 ] as const;
 
 export const ClinicVideos: React.FC<ClinicVideosProps> = ({
