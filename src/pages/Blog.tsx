@@ -25,15 +25,23 @@ const Blog: React.FC = () => {
 
   const filtered = blogPosts.filter((post) => {
     const matchCat =
-      activeCategory === "All" || post.category === activeCategory;
+      activeCategory === "All" ||
+      post.category.toLowerCase() === activeCategory.toLowerCase() ||
+      post.tags.some((t) => t.toLowerCase() === activeCategory.toLowerCase());
+    const query = searchQuery.trim().toLowerCase();
     const matchSearch =
-      post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+      query === "" ||
+      post.title.toLowerCase().includes(query) ||
+      post.excerpt.toLowerCase().includes(query) ||
+      post.tags.some((t) => t.toLowerCase().includes(query));
     return matchCat && matchSearch;
   });
 
-  const featured = blogPosts.find((p) => p.featured);
-  const rest = filtered.filter((p) => !p.featured);
+  const isDefaultView = activeCategory === "All" && searchQuery.trim() === "";
+  const featured = isDefaultView ? blogPosts.find((p) => p.featured) : null;
+  const gridPosts = isDefaultView
+    ? filtered.filter((p) => !p.featured)
+    : filtered;
 
   return (
     <div className="min-h-screen bg-gray-50 mt-20">
@@ -207,7 +215,7 @@ const Blog: React.FC = () => {
 
       {/* ── ARTICLE GRID ─────────────────────────────────────── */}
       <section className="py-8 pb-20 container mx-auto px-4">
-        {rest.length === 0 ? (
+        {gridPosts.length === 0 ? (
           <div className="text-center py-20 text-gray-400">
             <FaBrain className="text-5xl mx-auto mb-4 opacity-30" />
             <p className="text-xl font-semibold">No articles found</p>
@@ -215,7 +223,7 @@ const Blog: React.FC = () => {
           </div>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {rest.map((post, i) => (
+            {gridPosts.map((post, i) => (
               <motion.div
                 key={post.id}
                 initial={{ opacity: 0, y: 30 }}
