@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
     <>
       <Helmet>
         <title>Contact Neuropoint Medical Centre | Dr. Pratik Kishore</title>
-        <meta name="description" content="Schedule a consultation at Neuropoint Medical Centre with Dr. Pratik Kishore, a leading neurologist and neurovascular intervention specialist in New Delhi." />
+        <meta name="description" content="Schedule a consultation at Neuropoint Medical Centre with Dr. Pratik Kishore, Senior Consultant Neurologist and Neurovascular Intervention Specialist in New Delhi." />
         <meta name="keywords" content="Neuropoint Medical Centre, Dr. Pratik Kishore, Neurologist, Neurovascular, Stroke Management, Delhi" />
         <script type="application/ld+json">
           {`
@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
                 Expert Neurological Care
               </h1>
               <p className="text-xl md:text-2xl mb-8 leading-relaxed text-zinc-100">
-                Connect with Dr. Pratik Kishore, a leading neurologist and neurovascular intervention specialist.
+                Connect with Dr. Pratik Kishore, Senior Consultant Neurologist and Neurovascular Intervention Specialist.
               </p>
               <a
                 href="#contact-form"
@@ -132,7 +132,7 @@ const Contact: React.FC = () => {
                 <motion.div className="w-full lg:w-1/2 lg:pl-8 mb-8 lg:mb-0 order-1 lg:order-2 p-8">
                   <img
                     src="/images/about2.jpg"
-                    alt="Dr. Pratik Kisore Almeida"
+                    alt="Dr. Pratik Kishore"
                     className="rounded-lg shadow-lg w-full h-auto object-cover"
                   />
                 </motion.div>

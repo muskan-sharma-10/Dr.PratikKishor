@@ -12,8 +12,8 @@ const Home: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>Dr. Pratik Kishore | Best Neurologist in Karol Bagh, Delhi</title>
-                <meta name="description" content="Consult Dr. Pratik Kishore, the best neurologist in Karol Bagh, Delhi at Neuropoint Medical Centre. Expert in stroke, headache, epilepsy & neurovascular interventions." />
+                <title>Dr. Pratik Kishore | Neurologist in Karol Bagh, Delhi | Neuropoint</title>
+                <meta name="description" content="Consult Dr. Pratik Kishore, Senior Consultant Neurologist and Neurovascular Intervention Specialist in Karol Bagh, Delhi at Neuropoint Medical Centre. Care for stroke, headache, epilepsy & neurovascular interventions." />
                 <script type="application/ld+json">
                     {`
                     [

@@ -55,10 +55,10 @@ export const services: Service[] = [
             { name: "TIA (Mini-Stroke)", description: "Transient Ischemic Attack—a temporary blockage that is a warning sign of a major stroke." }
         ],
         benefits: [
-            "Minimization of permanent brain damage",
-            "Significant improvement in functional recovery",
-            "Rapid restoration of blood flow to the brain",
-            "Reduced risk of long-term disability"
+            "Aims to minimize permanent brain tissue injury",
+            "Supports functional recovery and mobility",
+            "Restoration of cerebral blood flow in eligible patients",
+            "Helps reduce the risk of long-term disability with timely care"
         ],
         risks: [
             "Post-procedural bleeding (hemorrhage)",
@@ -99,9 +99,9 @@ export const services: Service[] = [
         ],
         benefits: [
             "No large incisions (performed through a small puncture in the groin or wrist)",
-            "Reduced pain and minimal scarring",
-            "Significantly shorter hospital stay and faster recovery",
-            "Highly precise treatment for deep-seated brain lesions"
+            "Reduced discomfort and minimal scarring",
+            "Typically shorter hospital recovery compared to open surgery",
+            "Highly precise treatment for deep-seated vascular lesions"
         ],
         risks: [
             "Stroke or vessel injury during the procedure",
@@ -183,10 +183,10 @@ export const services: Service[] = [
             { name: "Refractory Headaches", description: "Severe headaches that do not respond well to standard oral medications." }
         ],
         benefits: [
-            "Significant reduction in frequency and severity of symptoms",
+            "Noticeable reduction in frequency and severity of symptoms",
             "Improved quality of life and functional independence",
             "Targeted treatment with fewer systemic side effects",
-            "Expert management of advanced medical technology"
+            "Specialized management of advanced neuromodulation technology"
         ],
         risks: [
             "Injection site soreness or bruising",

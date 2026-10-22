@@ -322,7 +322,7 @@ const BlogDetail: React.FC = () => {
                   Senior Consultant Neurologist · Neuropoint Medical Centre, New Delhi
                 </p>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  Dr. Pratik Kishore is a leading neurologist specialising in stroke,
+                  Dr. Pratik Kishore is a Senior Consultant Neurologist specialising in stroke,
                   epilepsy, Parkinson's disease, and neuro-interventions. He combines
                   evidence-based medicine with culturally relevant guidance for Indian patients.
                 </p>

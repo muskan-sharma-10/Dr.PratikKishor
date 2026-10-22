@@ -10,7 +10,7 @@ const patientTestimonials = [
         name: "Rajesh Sharma",
         age: "52 yrs",
         condition: "Acute Ischemic Stroke Recovery",
-        story: "When my father showed sudden speech slurring and arm weakness, we reached the hospital within the golden hour. Dr. Pratik Kishore's swift intervention and post-stroke rehabilitation guidance saved his mobility completely. We are eternally grateful.",
+        story: "When my father showed sudden speech slurring and arm weakness, we reached the hospital within the golden hour. Dr. Pratik Kishore's swift clinical intervention and rehabilitation guidance supported his functional recovery and mobility. We are deeply grateful.",
         rating: 5,
         tag: "Stroke Care",
     },
@@ -18,7 +18,7 @@ const patientTestimonials = [
         name: "Pooja Verma",
         age: "36 yrs",
         condition: "Chronic Intractable Migraine Relief",
-        story: "I suffered from debilitating headaches for over 6 years. Dr. Pratik Kishore thoroughly diagnosed the trigger factors and tailored a targeted preventive treatment. My quality of life has dramatically improved with zero frequent episodes now.",
+        story: "I suffered from debilitating headaches for over 6 years. Dr. Pratik Kishore thoroughly diagnosed the trigger factors and tailored a targeted preventive treatment. My quality of life has noticeably improved, and episodes are now significantly better managed.",
         rating: 5,
         tag: "Headache Clinic",
     },
@@ -86,7 +86,7 @@ const PatientStories: React.FC = () => {
                         transition={{ delay: 0.2 }}
                         className="text-lg md:text-xl text-amber-100 max-w-3xl mx-auto"
                     >
-                        Discover how compassionate neurology care, accurate diagnostics, and personalized treatment at Neuropoint Medical Centre empower patients towards full recovery.
+                        Discover how compassionate neurology care, accurate diagnostics, and personalized treatment at Neuropoint Medical Centre support patients on their path to health and recovery.
                     </motion.p>
                 </div>
             </section>
@@ -143,6 +143,11 @@ const PatientStories: React.FC = () => {
                                 </div>
                             </motion.div>
                         ))}
+                    </div>
+
+                    {/* Medical Disclaimer */}
+                    <div className="mt-10 text-center text-xs text-gray-500 max-w-3xl mx-auto italic border-t border-gray-100 pt-6">
+                        *Disclaimer: Patient testimonials reflect individual medical experiences and personal treatment responses. Clinical outcomes, recovery timelines, and procedural responses vary depending on individual diagnosis, health status, and medical history.
                     </div>
                 </div>
             </section>

@@ -16,7 +16,7 @@ const Carousel: React.FC = () => {
       url: "/images/2.jpg",
       alt: "Dr. Pratik with medical team",
       title: "Advanced Neurovascular Intervention",
-      subtitle: "Pioneering minimally invasive stroke and aneurysm treatments",
+      subtitle: "Specialized minimally invasive stroke and aneurysm interventions",
     },
     // {
     //   url: "/images/3.jpg",
@@ -28,7 +28,7 @@ const Carousel: React.FC = () => {
       url: "/images/4.jpg",
       alt: "Dr. Pratik research",
       title: "Academic Excellence",
-      subtitle: "Leading research and clinical trials in modern neurology",
+      subtitle: "Dedicated to clinical research and advanced care in modern neurology",
     },
     {
       url: "/images/5.jpg",

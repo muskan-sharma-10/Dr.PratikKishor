@@ -182,7 +182,7 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-amber-700">
           <div>
             <h4 className="text-lg font-bold text-amber-800 mb-4 border-b border-amber-100 pb-2">Neuropoint Medical Centre</h4>
-            <p className="text-sm">A state-of-the-art facility located at <strong>New Rohtak Road</strong> dedicated to advanced neurology and diagnostics. Dr. Pratik Kishore leads the clinical side, ensuring patients receive the highest standard of neurological care with modern interventional capabilities.</p>
+            <p className="text-sm">A modern neurological care facility located at <strong>New Rohtak Road</strong> dedicated to neurology and diagnostics. Dr. Pratik Kishore leads the clinical side, ensuring patients receive comprehensive, evidence-based neurological care with modern interventional capabilities.</p>
             <div className="mt-4 grid grid-cols-2 gap-2">
               <div className="aspect-video overflow-hidden rounded-lg shadow-sm border border-amber-100">
                 <img src="/images/2.jpg" alt="Clinic Interior" className="w-full h-full object-cover transform transition-transform hover:scale-110" />
@@ -194,8 +194,8 @@ const About: React.FC = () => {
           </div>
           <div className="mt-8 md:mt-0">
             <h4 className="text-lg font-bold text-amber-800 mb-4 border-b border-amber-100 pb-2">Diagnostic Excellence</h4>
-            <p className="text-sm">Dr. Shalini manages the diagnostic and pathological services at Neuropoint, ensuring total accuracy in laboratory findings. This seamless collaboration between clinical neurology and precise pathology is what defines the holistic approach at our clinic.</p>
-            <p className="mt-3 text-sm italic">"Providing accurate results for life-saving decisions."</p>
+            <p className="text-sm">Dr. Shalini manages the diagnostic and pathological services at Neuropoint, ensuring diagnostic precision and stringent quality standards in laboratory findings. This collaboration between clinical neurology and pathology supports reliable medical evaluation at our clinic.</p>
+            <p className="mt-3 text-sm italic">"Dedicated to dependable diagnostic insights for clinical decision-making."</p>
           </div>
         </div>
       ),
@@ -209,8 +209,8 @@ const About: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-800 to-gray-900 text-white mt-20">
       <Helmet>
-        <title>About Dr. Pratik Kishore | Best Neurologist in Karol Bagh</title>
-        <meta name="description" content="Learn about Dr. Pratik Kishore, the best neurologist in Karol Bagh, New Delhi, and the expert team at Neuropoint Medical Centre." />
+        <title>About Dr. Pratik Kishore | Neurologist in Karol Bagh, New Delhi</title>
+        <meta name="description" content="Learn about Dr. Pratik Kishore, Senior Consultant Neurologist in Karol Bagh, New Delhi, and the multidisciplinary team at Neuropoint Medical Centre." />
         <script type="application/ld+json">
           {`
           {
@@ -342,10 +342,10 @@ const About: React.FC = () => {
           <div className="grid md:grid-cols-12 gap-8 items-center flex-row-reverse">
             <div className="md:col-span-7 space-y-6 text-lg">
               <p className="text-gray-700 leading-relaxed">
-                Dr. Shalini is a distinguished Pathology specialist with a focus on diagnostic excellence and medical science. She brings extensive expertise in laboratory medicine, providing critical diagnostic support that is foundational to effective patient treatment and care.
+                Dr. Shalini is an experienced Pathology specialist with a focus on diagnostic accuracy and medical science. She brings dedicated expertise in laboratory medicine, providing essential diagnostic support that is foundational to effective patient treatment and care.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Her commitment to precision and accuracy in diagnostics ensures that patients at Neuropoint Medical Centre receive the highest standard of medical evaluation. She plays a pivotal role in the comprehensive care team, bridging clinical symptoms with definitive laboratory findings.
+                Her commitment to precision in diagnostics helps ensure that patients at Neuropoint Medical Centre receive thorough and reliable medical evaluation. She plays a pivotal role in the clinical care team, correlating clinical presentations with laboratory findings.
               </p>
               <div className="pt-4">
                 <h3 className="text-2xl font-semibold mb-3 text-amber-800">Expertise</h3>

@@ -40,7 +40,7 @@ const Services: React.FC = () => {
     return (
         <main className="relative min-h-screen">
             <Helmet>
-                <title>Neurology Services | Best Neurologist in Karol Bagh, Delhi</title>
+                <title>Neurology Services | Dr. Pratik Kishore | Karol Bagh, Delhi</title>
                 <meta name="description" content="Explore advanced neurological treatments in Karol Bagh by Dr. Pratik Kishore. Services include stroke management, headache treatment, and neurovascular procedures." />
                 <script type="application/ld+json">
                   {`

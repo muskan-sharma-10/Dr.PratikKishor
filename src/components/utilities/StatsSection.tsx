@@ -10,28 +10,28 @@ interface StatItem {
 
 const stats: StatItem[] = [
     {
-        value: 15,
+        value: 12,
         suffix: '+',
-        label: 'Years of Clinical Experience',
+        label: 'Years of Medical & Specialist Experience',
         icon: '🏅',
     },
     {
-        value: 10000,
+        value: 8,
         suffix: '+',
-        label: 'Patients Treated',
+        label: 'Neurological Care Disciplines',
         icon: '🧠',
     },
     {
-        value: 5000,
-        suffix: '+',
-        label: 'Neurovascular Procedures',
+        value: 4,
+        suffix: '',
+        label: 'Medical & Fellowship Credentials',
         icon: '⚕️',
     },
     {
-        value: 98,
-        suffix: '%',
-        label: 'Patient Satisfaction Rate',
-        icon: '❤️',
+        value: 2,
+        suffix: '',
+        label: 'Dedicated Practice Locations in Delhi',
+        icon: '🏥',
     },
 ];
 
@@ -141,10 +141,10 @@ const StatsSection: React.FC = () => {
                     className="text-center mb-10"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
-                        Trusted by Thousands
+                        Evidence-Based Neurological Care
                     </h2>
                     <p className="text-blue-200 text-base md:text-lg">
-                        Excellence in Neurology & Neurovascular Care
+                        Dedicated Clinical Practice in Neurology & Neurovascular Care
                     </p>
                 </motion.div>
 

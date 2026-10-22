@@ -43,7 +43,7 @@ const AppointmentSection = () => {
             <div className="space-y-4 text-white">
               <p className="text-center lg:text-left">We will do our best to contact you within 24 hours.</p>
               <p className="text-center lg:text-left">Please be ready to provide medical records and imaging studies</p>
-              <p className="text-center lg:text-left">Your case will be carefully evaluated, and we will provide our recommendation and eligibility for surgical intervention</p>
+              <p className="text-center lg:text-left">Your case will be carefully evaluated, and we will provide clinical recommendations and eligibility for interventional or medical neurology care</p>
             </div>
           </div>
 

@@ -6,7 +6,7 @@ const FAQAndMap = () => {
     const faqData = [
         {
             question: "Who is Dr. Pratik Kishore?",
-            answer: "Dr. Pratik Kishore, MD, DM, FNB, is a leading Neurologist and Neurovascular Intervention Specialist. He specializes in advanced stroke management and minimally invasive endovascular procedures."
+            answer: "Dr. Pratik Kishore, MD, DM, FNB, is a Senior Consultant Neurologist and Neurovascular Intervention Specialist. He specializes in advanced stroke management and minimally invasive endovascular procedures."
         },
         {
             question: "What is Dr. Pratik Kishore's educational background?",
@@ -14,7 +14,7 @@ const FAQAndMap = () => {
         },
         {
             question: "What are Dr. Pratik Kishore's areas of expertise?",
-            answer: "Dr. Pratik Kishore specializes in stroke management, brain aneurysms, interventional neurology, and neurophysiological diagnostics. He is an expert in mechanical thrombectomy, aneurysm coiling, and carotid stenting."
+            answer: "Dr. Pratik Kishore specializes in stroke management, brain aneurysms, interventional neurology, and neurophysiological diagnostics, with clinical expertise in mechanical thrombectomy, aneurysm coiling, and carotid stenting."
         },
         {
             question: "Where does Dr. Pratik Kishore practice?",
@@ -22,7 +22,7 @@ const FAQAndMap = () => {
         },
         {
             question: "What are Dr. Pratik Kishore's research interests?",
-            answer: "His main areas of research include interventional neurology, hyperacute stroke management, and advanced neuro-diagnostics. He has significantly contributed to the field of neurovascular intervention."
+            answer: "His main clinical and academic interests include interventional neurology, hyperacute stroke management, and advanced neuro-diagnostics."
         },
         {
             question: "Where can I find more information about Dr. Pratik Kishore?",

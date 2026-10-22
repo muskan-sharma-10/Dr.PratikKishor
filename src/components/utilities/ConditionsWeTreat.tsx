@@ -7,10 +7,10 @@ const conditions = [
     { title: 'Headache', icon: <FaBrain />, desc: 'Comprehensive diagnosis and specialized treatment for all types of severe headaches.' },
     { title: 'Epilepsy', icon: <FaHeartbeat />, desc: 'Expert management, monitoring, and tailored care plans for seizure disorders.' },
     { title: 'Parkinson\'s Disease', icon: <FaUserMd />, desc: 'Advanced therapies and continuous care for Parkinson’s and movement disorders.' },
-    { title: 'Stroke', icon: <FaBrain />, desc: 'Rapid, life-saving interventions, acute management and long-term stroke recovery.' },
+    { title: 'Stroke', icon: <FaBrain />, desc: 'Timely emergency evaluation, acute medical management, and structured long-term stroke rehabilitation.' },
     { title: 'Neuropathy', icon: <FaSyringe />, desc: 'Effective diagnostic approaches and treatments for nerve damage and associated pain.' },
     { title: 'Backache', icon: <FaStethoscope />, desc: 'Accurate diagnoses and effective relief strategies for acute and chronic back pain.' },
-    { title: 'Neuroinfection', icon: <FaNotesMedical />, desc: 'Prompt, precise, and critical care for life-threatening infections of the nervous system.' }
+    { title: 'Neuroinfection', icon: <FaNotesMedical />, desc: 'Prompt diagnostic evaluation and evidence-based clinical care for infections of the nervous system.' }
 ];
 
 const ConditionsWeTreat: React.FC = () => {
@@ -45,7 +45,7 @@ const ConditionsWeTreat: React.FC = () => {
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="text-lg text-zinc-600 max-w-3xl mx-auto"
                     >
-                        Providing world-class neurological care and advanced neurointerventional procedures across a comprehensive range of conditions.
+                        Providing comprehensive, evidence-based neurological care and advanced neurointerventional procedures across a wide range of conditions.
                     </motion.p>
                 </div>
 

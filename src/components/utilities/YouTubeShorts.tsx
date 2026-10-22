@@ -18,8 +18,8 @@ export const youtubeShortsData: ShortItem[] = [
   },
   {
     id: "OoP2zaMbLHo",
-    title: "Stroke Treatment: How Paralysis Can Be Reversed During Surgery",
-    description: "Learn how acute neurovascular intervention and timely surgery help reverse stroke paralysis.",
+    title: "Stroke Treatment: Acute Intervention & Paralysis Recovery",
+    description: "Learn about acute neurovascular intervention and how timely treatment aims to restore blood flow and support neurological recovery.",
     category: "Stroke Treatment",
   },
 ];
